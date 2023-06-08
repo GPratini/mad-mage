@@ -1,26 +1,28 @@
 import React, { useState } from 'react';
 import ImageMapper from 'react-img-mapper';
+import './Mapper.css';
 
 const Mapper = (props) => {
   const [msg, setMsg] = useState(null);
-  const [hoveredArea, setHoveredArea] = useState(null);
   const [moveMsg, setMoveMsg] = useState(null);
 
   const load = () => {
-    setMsg("Interact with image !");
+    setMsg("Interact with the image!");
   };
 
+  const mapas = ["andar1.png", "andar2.png","andar3.png","andar4.png","andar5.png","andar6.png","andar7.png","andar8.png","andar9.png","andar10.png","andar11.png","andar12.png","andar13.png","andar14.png","andar15.png","andar16.png","andar17.png","andar18.png","andar19.png","andar20.png","andar21.png","andar22.png","andar23.png","skullport.png"];
+
   const clicked = (area) => {
-    setMsg(
-      `You clicked on ${area.shape} ${area.name} at coords ${JSON.stringify(
-        area.coords
-      )} !`
-    );
+    setMsg(`You clicked on ${area.id} ${area.name}!`);
+  };
+
+  const moveOnArea = (area, evt) => {
+    setMoveMsg("You moved on " + area.id + " " + area.name + "!");
   };
 
   const clickedOutside = (evt) => {
     const coords = { x: evt.nativeEvent.layerX, y: evt.nativeEvent.layerY };
-    // setMsg(`You clicked on the image at coords ${JSON.stringify(coords)} !`);
+    setMsg(`You clicked on the image at coords ${JSON.stringify(coords)}!`);
   };
 
   const moveOnImage = (evt) => {
@@ -28,67 +30,35 @@ const Mapper = (props) => {
     setMoveMsg(`You moved on the image at coords ${JSON.stringify(coords)}!`);
   };
 
-  const enterArea = (area) => {
-    setHoveredArea(area);
-    setMsg(
-      `You entered ${area.shape} ${area.name} at coords ${JSON.stringify(area.coords)}!`
-    );
-  };
-
-  const leaveArea = (area) => {
-    setHoveredArea(null);
-    setMsg(
-      `You left ${area.shape} ${area.name} at coords ${JSON.stringify(area.coords)}!`
-    );
-  };
-
-  const moveOnArea = (area, evt) => {
-    const coords = { x: evt.nativeEvent.layerX, y: evt.nativeEvent.layerY };
-    setMoveMsg(
-      "You moved on " + area.shape + " " + area.name + ' at coords {"x":' + coords.x + ',"y":' + coords.y + "}!"
-    );
-  };
-
-  const getTipPosition = (area) => {
-    return { top: `${area.center[1]}px`, left: `${area.center[0]}px` };
-  };
-
   return (
     <div>
-          <ImageMapper
-            src={"andar1.png"}
-            map={{
-              name: "andar1",
-              areas: [
-                {
-                  id: "1-1",
-                  name: "Poço",
-                  shape: "rect",
-                  coords: [169,167,305,315],
-                  preFillColor: "rgba(0, 0, 255, 0.15)",
-                  fillColor: "rgba(0, 0, 255, 0.2)"
-                }
-              ]
-            }}
-            height={730}
-            onImageClick={(evt) => clickedOutside(evt)}
-            onImageMouseMove={(evt) => moveOnImage(evt)}
-            onLoad={() => load()}
-            onMouseMove={(area, _, evt) => moveOnArea(area, evt)}
-            onClick={(area) => clicked(area)}
-          />
-
-{hoveredArea && (
-            <span
-              className="tooltip"
-              style={{ ...getTipPosition(hoveredArea) }}
-            >
-              {hoveredArea && hoveredArea.name}
-            </span>
-          )}
-
-        <pre className="message">{msg ? msg : null}</pre>
-        <pre>{moveMsg ? moveMsg : null}</pre>
+      <div id="mapa">
+        <ImageMapper
+          src={mapas[0]}
+          map={{
+            name: "Andar da catacumba",
+            areas: [
+              {
+                id: "1-1",
+                name: "Poço",
+                shape: "rect",
+                coords: [473, 570, 532, 630]
+              }
+            ]
+          }}
+          onLoad={() => load()}
+          onImageClick={(evt) => clickedOutside(evt)}
+          onImageMouseMove={(evt) => moveOnImage(evt)}
+          onMouseMove={(area, _, evt) => moveOnArea(area, evt)}
+          onClick={(area) => clicked(area)}
+          fillColor='rgba(0, 0, 255, 0.2)'
+          width={980}
+        />
+      </div>
+      <div id="info">
+        <p>{msg ? msg : null}</p>
+        <p>{moveMsg ? moveMsg : null}</p>
+      </div>
     </div>
   );
 };
