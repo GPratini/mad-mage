@@ -1,19 +1,22 @@
 import React, { useState } from 'react';
 import ImageMapper from 'react-img-mapper';
-import './Mapper.css';
+import { setAndar } from './index';
 
-const Mapper = (props) => {
+const Andar2 = (props) => {
   const [msg, setMsg] = useState(null);
   const [moveMsg, setMoveMsg] = useState(null);
+  var [salaAtiva, setSalaAtiva] = useState(null);
+  var [nomeSala, setNomeSala] = useState(null);
+  var viewPortWidth = window.innerWidth;
 
   const load = () => {
     setMsg("Interact with the image!");
   };
 
-  const mapas = ["andar1.png", "andar2.png","andar3.png","andar4.png","andar5.png","andar6.png","andar7.png","andar8.png","andar9.png","andar10.png","andar11.png","andar12.png","andar13.png","andar14.png","andar15.png","andar16.png","andar17.png","andar18.png","andar19.png","andar20.png","andar21.png","andar22.png","andar23.png","skullport.png"];
-
   const clicked = (area) => {
     setMsg(`You clicked on ${area.id} ${area.name}!`);
+    setSalaAtiva(area.id);
+    setNomeSala(area.name);
   };
 
   const moveOnArea = (area, evt) => {
@@ -33,17 +36,18 @@ const Mapper = (props) => {
   return (
     <div>
       <div id="mapa">
+        <button class='elevador' id='botao1' onClick={setAndar(1)}>1º</button><button class='elevador' id='botao2' onClick={setAndar(2)}>2º</button>
         <ImageMapper
-          src={mapas[0]}
+          src={"andar2.png"}
           map={{
-            name: "Andar da catacumba",
+            name: "2º Andar",
             areas: [
               {
-                id: "1-1",
-                name: "Poço",
+                id: "2-1a",
+                name: "Bazaar Side Entrance",
                 shape: "rect",
-                coords: [475, 575, 535, 635]
-              }
+                coords: [849,904,925,982]
+              }          
             ]
           }}
           onLoad={() => load()}
@@ -51,16 +55,28 @@ const Mapper = (props) => {
           onImageMouseMove={(evt) => moveOnImage(evt)}
           onMouseMove={(area, _, evt) => moveOnArea(area, evt)}
           onClick={(area) => clicked(area)}
+          stayHighlighted= {true}
           fillColor='rgba(0, 0, 255, 0.2)'
-          width={985}
+          responsive={true}
+          parentWidth={(viewPortWidth/100)*48}
         />
       </div>
       <div id="info">
         <p>{msg ? msg : null}</p>
         <p>{moveMsg ? moveMsg : null}</p>
+
+        <h1>{nomeSala ? nomeSala : "Dungeon of the Mad Mage"}</h1>
+
+        {salaAtiva === "2-1" && <p className='sala' id='2-1'>
+          <strong>Detritus.</strong> Trash and debris litter the floor.
+
+          <strong>Bas-Reliefs.</strong> The walls are adorned with bas-reliefs that once depicted dwarves carrying supplies. The dwarves' faces have been chipped away and replaced with cartoonish goblin heads drawn in charcoal.
+
+          <strong>Noise.</strong> Banging noises can be heard to the north. (The goblins in area 1b are building a wooden stage there.)
+        </p>}
       </div>
     </div>
   );
 };
 
-export default Mapper;
+export default Andar2;

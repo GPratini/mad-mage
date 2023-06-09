@@ -1,6 +1,6 @@
 #mapa {
     float: left;
-    width: 1000px;
+    width: 49vw;
     height: 100vh;
     overflow-y: scroll;
     overflow-x: hidden;
@@ -10,6 +10,7 @@
 
 #info {
     float: right;
+    width: 50vw;
     height: 98vh;
     overflow-y: scroll;
     overflow-x: hidden;
