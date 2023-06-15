@@ -17,3 +17,29 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+#mapa {
+  float: left;
+  width: 49vw;
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+#info {
+  float: right;
+  width: 50vw;
+  height: 98vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding: 1vh 2px;
+}
+
+textarea {
+  width: 98%;
+  min-height: 5em;
+  resize: none;
+  overflow: hidden;
+}
