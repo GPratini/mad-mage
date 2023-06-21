@@ -39,6 +39,7 @@ code {
 
 textarea {
   width: 98%;
+  height: fit-content;
   min-height: 5em;
   resize: none;
   overflow: hidden;
