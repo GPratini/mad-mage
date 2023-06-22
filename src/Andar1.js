@@ -86,49 +86,50 @@ export const Mapa1 = {
 export function Salas1({ salaAtual }) {
   return (
     <div>
-      {salaAtual === "1-1" && <p className='sala' id='1-1'>
-        At the bottom of the Yawning Portal entry well is a dark, 40-foot-square room with the following features:<br></br>
+      {salaAtual === "1-1" && <div className='sala' id='1-1'>
+        <p>At the bottom of the Yawning Portal entry well is a dark, 40-foot-square room with the following features:<br></br>
 
         <strong>Exits.</strong> The only exit appears to be a tunnel that leads south before bending west. (There's also a one-way secret door to the north.)<br></br>
         <strong>Sandy Floor.</strong> A thin layer of sand covers the floor.<br></br>
-        <strong>Hanging Shields.</strong> Dented, rusty shields adorn the walls, which are also covered with graffiti.<br></br>
+        <strong>Hanging Shields.</strong> Dented, rusty shields adorn the walls, which are also covered with graffiti.</p>
 
         <h2>One-Way Secret Door</h2>
 
-        A one-way secret door built into the north wall can't be opened from the south without the aid of a knock spell or similar magic. Any character who finds the secret door also notices a 1-inch-diameter hole bored through it at a height of 5 feet. On the north side of the secret door, a human bandit quietly listens at the hole for sounds of newcomers descending the shaft. Upon hearing creatures enter the area, the bandit retreats to warn its confederates in areas 6, area 8, and area 9. Characters in the room can hear the bandit's soft, retreating footfalls with a successful DC 20 Wisdom (Perception) check.
+        <p>A one-way secret door built into the north wall can't be opened from the south without the aid of a knock spell or similar magic. Any character who finds the secret door also notices a 1-inch-diameter hole bored through it at a height of 5 feet. On the north side of the secret door, a human bandit quietly listens at the hole for sounds of newcomers descending the shaft. Upon hearing creatures enter the area, the bandit retreats to warn its confederates in areas 6, area 8, and area 9. Characters in the room can hear the bandit's soft, retreating footfalls with a successful DC 20 Wisdom (Perception) check.</p>
 
         <h2>Sand</h2>
 
-        A search of the sand yields some discarded gear (two iron spikes, an empty wineskin, a tinderbox, and a pair of pants sized for an adult human) and a random trinket dropped by a frightened adventurer. Roll percentile dice and consult the Trinkets table in chapter 5 of the Player's Handbook to determine the trinket.
+        <p>A search of the sand yields some discarded gear (two iron spikes, an empty wineskin, a tinderbox, and a pair of pants sized for an adult human) and a random trinket dropped by a frightened adventurer. Roll percentile dice and consult the Trinkets table in chapter 5 of the Player's Handbook to determine the trinket.</p>
 
         <h2>Shields</h2>
 
-        Sixty old shields hang on the walls; they break apart if disturbed in any way. Written in blood on the wall, concealed behind one of the shields, is the following message in Elvish:
-        Beyond the pillar forest, the Mad Mage waits.
-        Casting spells behind magic gates.
-      </p>}
-      {salaAtual === "1-2a" && <p className='sala' id='1-2a'>
+        <p>Sixty old shields hang on the walls; they break apart if disturbed in any way. Written in blood on the wall, concealed behind one of the shields, is the following message in Elvish:<br></br>
+        Beyond the pillar forest, the Mad Mage waits.<br></br>
+        Casting spells behind magic gates.</p>
+      </div>}
+      {salaAtual === "1-2a" && <div className='sala' id='1-2a'>
+        <p>At the west end of a 20-foot-wide hall (area 2a), stairs descend 10 feet to a room lined with pillars (area 2b).<br></br>
+
         <strong>Bas-Reliefs.</strong> Every 10-foot section of wall has a 9-foot-high, 4-foot-wide, 3-inch-deep door-shaped recess containing a bas-relief carving of a demon. Each relief depicts a different kind of demon (see below).<br></br>
 
         <strong>Skeleton.</strong> A kenku skeleton lies on the floor, one of its thin arms pointing toward a bas-relief of a nalfeshnee demon on the south wall. (Halaster artfully placed the skeleton here to help adventurers find the secret door to area 3.)<br></br>
 
-        The carvings on the north wall of area 2a depict (from east to west) a balor, a barlgura, a chasme, a dretch, a glabrezu, a goristro, and a hezrou. The carvings on the south wall depict (from west to east) a marilith, a nalfeshnee, a quasit, a shadow demon, a vrock, and a yochlol. The recessed wall that contains the nalfeshnee carving has a secret door leading to area 3. The recessed wall that contains the dretch carving has another secret door, which leads to area 4. The dretch carving has half-inch spy-holes for eyes. These holes are detected when the secret door is found.
-      </p>}
+        The <a target="blank" href="demon.reliefsN.jpg">carvings on the north wall</a> of area 2a depict (from east to west) a balor, a barlgura, a chasme, a dretch, a glabrezu, a goristro, and a hezrou. The <a target="blank" href="demon.reliefsS.jpg">carvings on the south wall</a> depict (from west to east) a marilith, a nalfeshnee, a quasit, a shadow demon, a vrock, and a yochlol. The recessed wall that contains the nalfeshnee carving has a secret door leading to area 3. The recessed wall that contains the dretch carving has another secret door, which leads to area 4. The dretch carving has half-inch spy-holes for eyes. These holes are detected when the secret door is found.</p>
+      </div>}
 
-      {salaAtual === "1-2b" && <p className='sala' id='1-2b'>
-        <strong>Bugbears.</strong> Two bugbears hide behind pillars. (Each bugbear is host to an intellect devourer in its skull cavity.)<br></br>
+      {salaAtual === "1-2b" && <div className='sala' id='1-2b'>
+        <p>At the west end of a 20-foot-wide hall (area 2a), stairs descend 10 feet to a room lined with pillars (area 2b). Similar staircases descend into the room from 10-foot-wide tunnels leading north, west, and south.</p>
+        
+        <p><strong>Bugbears.</strong> Two <a href="https://5e.tools/bestiary.html#bugbear_mm" target="blank">bugbears</a> hide behind pillars. (Each bugbear is host to an <a href="https://5e.tools/bestiary.html#intellect%20devourer_mm" target="blank">intellect devourer</a> in its skull cavity.)<br></br>
 
         <strong>Snake Skeleton.</strong> The skeleton of a giant constrictor snake coils up the top half of the northernmost pillar. The snake skeleton is harmless and falls apart if disturbed, clattering loudly as it hits the floor.<br></br>
 
-        <strong>Warning.</strong> The words "Certain death this way!" are carved in Common on the southeast wall, with an arrow pointing toward the southern exit.<br></br>
+        <strong>Warning.</strong> The words "Certain death this way!" are carved in Common on the southeast wall, with an arrow pointing toward the southern exit.<br></br></p>
 
-        The bugbears detect the approach of adventurers with the aid of the intellect devourers' Detect Sentience trait and therefore can't be surprised. As intruders approach their location, the bugbears withdraw down the southern tunnel and circle around to warn the goblinoids in area 23 of intruders. The bugbears know the perils of the western tunnel (area 21) and avoid it. Characters whose passive Wisdom (Perception) scores equal or exceed the bugbears' Dexterity (Stealth) checks notice the hiding or fleeing bugbears.<br></br>
+        <p>The bugbears detect the approach of adventurers with the aid of the intellect devourers' Detect Sentience trait and therefore can't be surprised. As intruders approach their location, the bugbears withdraw down the southern tunnel and circle around to warn the goblinoids in area 23 of intruders. The bugbears know the perils of the western tunnel (area 21) and avoid it. Characters whose passive Wisdom (Perception) scores equal or exceed the bugbears' Dexterity (Stealth) checks notice the hiding or fleeing bugbears. When a bugbear drops to 0 hit points, the intellect devourer in its skull teleports out to seek a new host.</p>
 
-        When a bugbear drops to 0 hit points, the intellect devourer in its skull teleports out to seek a new host.
-        Secret Compartment.<br></br>
-
-        Inspection of the southernmost pillar reveals a loose stone in its base. Behind the stone is an empty compartment, its contents discovered and plundered long ago.
-      </p>}
+        <p><strong>Secret Compartment.</strong> Inspection of the southernmost pillar reveals a loose stone in its base. Behind the stone is an empty compartment, its contents discovered and plundered long ago.</p>
+      </div>}
 
       {salaAtual === "1-3" && <p className='sala' id='1-3'>
         A secret door opens to reveal an empty 10-foot-square cubicle with a 5-foot-wide tunnel of rough-hewn stone leading away from it. The tunnel descends slightly until it reaches a room that smells like a sewer. The room contains the following features:<br></br>

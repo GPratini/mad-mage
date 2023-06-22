@@ -8,8 +8,8 @@ import { Salas1, Mapa1 } from './Andar1';
 import { Salas2, Mapa2 } from './Andar2';
 
 const Mapper = (props) => {
-  const [msg, setMsg] = useState(null);
-  const [moveMsg, setMoveMsg] = useState(null);
+  /* const [msg, setMsg] = useState(null);
+  const [moveMsg, setMoveMsg] = useState(null); */
   var [salaAtiva, setSalaAtiva] = useState(null);
   var [nomeSala, setNomeSala] = useState(null);
   var [andarAtivo, setAndarAtivo] = useState(1);
@@ -31,18 +31,17 @@ const Mapper = (props) => {
     setNomeSala(null);
   }
 
-  const load = () => {
+  /* const load = () => {
     setMsg("Interact with the image!");
-  };
+  }; */
 
   const clickArea = (area) => {
-    setMsg(`You clicked on ${area.id} ${area.name}!`);
     setSalaAtiva(area.id);
     setNomeSala(area.name);
     setNotas(localStorage.getItem(area.id));
   };
 
-  const moveOnArea = (area, evt) => {
+  /* const moveOnArea = (area, evt) => {
     setMoveMsg("You moved on " + area.id + " " + area.name + "!");
   };
 
@@ -54,7 +53,7 @@ const Mapper = (props) => {
   const moveOnImage = (evt) => {
     const coords = { x: evt.nativeEvent.layerX, y: evt.nativeEvent.layerY };
     setMoveMsg(`You moved on the image at coords ${JSON.stringify(coords)}!`);
-  };
+  }; */
 
   return (
     <div>
@@ -66,10 +65,10 @@ const Mapper = (props) => {
             name: mapas[andarAtivo - 1].name,
             areas: mapas[andarAtivo - 1].areas
           }}
-          onLoad={() => load()}
+          /* onLoad={() => load()}
           onImageClick={(evt) => clickedOutside(evt)}
           onImageMouseMove={(evt) => moveOnImage(evt)}
-          onMouseMove={(area, _, evt) => moveOnArea(area, evt)}
+          onMouseMove={(area, _, evt) => moveOnArea(area, evt)} */
           onClick={(area) => clickArea(area)}
           stayHighlighted={true}
           fillColor='rgba(0, 0, 255, 0.2)'
@@ -78,9 +77,6 @@ const Mapper = (props) => {
         />
       </div>
       <div id="info">
-        <p>{msg ? msg : null}</p>
-        <p>{moveMsg ? moveMsg : null}</p>
-
         <h1>{nomeSala ? nomeSala : "Dungeon of the Mad Mage"}</h1>
 
         {andarAtivo === 1 && <Salas1 salaAtual={salaAtiva} />}
