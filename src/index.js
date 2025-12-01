@@ -27,6 +27,8 @@ import { Salas20, Mapa20 } from './Andar20';
 import { Salas21, Mapa21 } from './Andar21';
 import { Salas22, Mapa22 } from './Andar22';
 import { Salas23, Mapa23 } from './Andar23';
+import { Salas24, Mapa24 } from './Andar24';
+import { Salas25, Mapa25 } from './Andar25';
 
 const Mapper = (props) => {
   /* const [msg, setMsg] = useState(null);
@@ -37,7 +39,7 @@ const Mapper = (props) => {
   let viewPortWidth = window.innerWidth;
   const [alturaTextArea, setAlturaTextArea] = useState(null);
   const [notas, setNotas] = useState("");
-  const mapas = [Mapa1, Mapa2, Mapa3, Mapa4, Mapa5, Mapa6, Mapa7, Mapa8, Mapa9, Mapa10, Mapa11, Mapa12, Mapa13, Mapa14, Mapa15, Mapa16, Mapa17, Mapa18, Mapa19, Mapa20, Mapa21, Mapa22, Mapa23];
+  const mapas = [Mapa1, Mapa2, Mapa3, Mapa4, Mapa5, Mapa6, Mapa7, Mapa8, Mapa9, Mapa10, Mapa11, Mapa12, Mapa13, Mapa14, Mapa15, Mapa16, Mapa17, Mapa18, Mapa19, Mapa20, Mapa21, Mapa22, Mapa23, Mapa24, Mapa25];
   document.title = mapas[andarAtivo - 1].name + ' | Dungeon of the Mad Mage';
 
   function TextAreaHandler(e) {
@@ -57,9 +59,15 @@ const Mapper = (props) => {
   }; */
 
   const clickArea = (area) => {
-    setSalaAtiva(area.id);
-    setNomeSala(area.name);
-    setNotas(localStorage.getItem(area.id));
+    if (area.id === "upperSkullport") {
+      clickedElevador(24);
+    } else if (area.id === "skullIsland") {
+      clickedElevador(25);
+    } else {
+      setSalaAtiva(area.id);
+      setNomeSala(area.name);
+      setNotas(localStorage.getItem(area.id));
+    }
   };
 
   /* const moveOnArea = (area, evt) => {
@@ -145,6 +153,8 @@ const Mapper = (props) => {
         {andarAtivo === 21 && <Salas21 salaAtual={salaAtiva} />}
         {andarAtivo === 22 && <Salas22 salaAtual={salaAtiva} />}
         {andarAtivo === 23 && <Salas23 salaAtual={salaAtiva} />}
+        {andarAtivo === 24 && <Salas24 salaAtual={salaAtiva} />}
+        {andarAtivo === 25 && <Salas25 salaAtual={salaAtiva} />}
 
         {salaAtiva && <textarea style={{ height: alturaTextArea - 4 }} value={notas} onChange={e => TextAreaHandler(e)} />}
         {salaAtiva && <button onClick={() => localStorage.clear()}>Clear all notes</button>}

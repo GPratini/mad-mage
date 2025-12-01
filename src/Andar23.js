@@ -3,7 +3,7 @@ export const Mapa23 = {
   name: "Skullport - Lower / Middle",
   areas: [
     {
-      id: "23-skull",
+      id: "skullIsland",
       name: "Skull Island",
       shape: "rect",
       coords: [740,2927,698,2821]
