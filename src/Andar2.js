@@ -6,8 +6,8 @@ export const Mapa2 = {
       id: "2-enc",
       name: "Random Encounters",
       shape: "circle",
-      coords: [458,208,67]
-    },{
+      coords: [458, 208, 67]
+    }, {
       id: "2-1a",
       name: "Bazaar Side Entrance",
       shape: "rect",
@@ -17,223 +17,223 @@ export const Mapa2 = {
       id: "2-1b",
       name: "Auction Hall",
       shape: "rect",
-      coords: [410,507,541,429]
+      coords: [410, 507, 541, 429]
     },
     {
       id: "2-1c",
       name: "Gibbets and Gravy",
       shape: "poly",
-      coords: [459,534,538,534,541,563,515,585,462,587]
+      coords: [459, 534, 538, 534, 541, 563, 515, 585, 462, 587]
     },
     {
       id: "2-1d",
       name: "Market Hall",
       shape: "poly",
-      coords: [511,846,513,609,564,560,562,352,591,326,668,326,699,354,697,556,749,612,749,849]
+      coords: [511, 846, 513, 609, 564, 560, 562, 352, 591, 326, 668, 326, 699, 354, 697, 556, 749, 612, 749, 849]
     },
     {
       id: "2-1e",
       name: "Yek the Tall",
       shape: "rect",
-      coords: [772,638,854,874]
+      coords: [772, 638, 854, 874]
     },
     {
       id: "2-1f",
       name: "Yek's Treasure",
       shape: "poly",
-      coords: [745,587,745,375,852,375,855,611,772,614]
+      coords: [745, 587, 745, 375, 852, 375, 855, 611, 772, 614]
     },
     {
       id: "2-2a",
       name: "Water Pump",
       shape: "rect",
-      coords: [254,1001,330,846]
+      coords: [254, 1001, 330, 846]
     },
     {
       id: "2-2b",
       name: "Abandoned Laboratory",
       shape: "rect",
-      coords: [148,1057,229,899]
+      coords: [148, 1057, 229, 899]
     },
     {
       id: "2-2c",
       name: "Wizard's Kitchen",
       shape: "rect",
-      coords: [43,1056,125,1002]
+      coords: [43, 1056, 125, 1002]
     },
     {
       id: "2-2d",
       name: "Kalabash's Bedroom",
       shape: "rect",
-      coords: [44,976,125,898]
+      coords: [44, 976, 125, 898]
     },
     {
       id: "2-3",
       name: "Halaster Puppet",
       shape: "rect",
-      coords: [43,821,201,742]
+      coords: [43, 821, 201, 742]
     },
     {
       id: "2-4",
       name: "Abandoned Camp",
       shape: "rect",
-      coords: [43,664,150,559]
+      coords: [43, 664, 150, 559]
     },
     {
       id: "2-5",
       name: "Arch Gate to Level 4",
       shape: "rect",
-      coords: [96,482,152,405]
+      coords: [96, 482, 152, 405]
     },
     {
       id: "2-6",
       name: "Music of the Dead",
       shape: "rect",
-      coords: [225,822,330,741]
+      coords: [225, 822, 330, 741]
     },
     {
       id: "2-7a",
       name: "Trenzia's Workroom",
       shape: "rect",
-      coords: [380,1058,435,925]
+      coords: [380, 1058, 435, 925]
     },
     {
       id: "2-7b",
       name: "Ghoul Barrels",
       shape: "poly",
-      coords: [513,925,512,1004,564,1004,562,1031,620,1032,618,978,592,979,594,925]
+      coords: [513, 925, 512, 1004, 564, 1004, 562, 1031, 620, 1032, 618, 978, 592, 979, 594, 925]
     },
     {
       id: "2-7c",
       name: "Trenzia's Laboratory",
       shape: "rect",
-      coords: [643,948,749,1081]
+      coords: [643, 948, 749, 1081]
     },
     {
       id: "2-7d",
       name: "Mining Woes",
       shape: "rect",
-      coords: [512,1212,618,1157]
+      coords: [512, 1212, 618, 1157]
     },
     {
       id: "2-7e",
       name: "Copper Vein",
       shape: "rect",
-      coords: [643,1212,747,1160]
+      coords: [643, 1212, 747, 1160]
     },
     {
       id: "2-8",
       name: "Fresco Cross Hall",
       shape: "poly",
-      coords: [617,898,878,901,879,432,902,432,905,900,1139,901,1138,926,904,924,905,1056,875,1056,875,927,615,924]
+      coords: [617, 898, 878, 901, 879, 432, 902, 432, 905, 900, 1139, 901, 1138, 926, 904, 924, 905, 1056, 875, 1056, 875, 927, 615, 924]
     },
     {
       id: "2-9a",
       name: "Trapped Hall",
       shape: "rect",
-      coords: [875,430,1270,378]
+      coords: [875, 430, 1270, 378]
     },
     {
       id: "2-9b",
       name: "Shunn's Gang",
       shape: "poly",
-      coords: [1293,455,1294,350,1327,352,1357,397,1367,419,1367,449,1375,484,1375,515,1375,552,1359,578,1346,557,1346,531,1323,535,1273,518,1254,504,1191,535,1034,535,1033,455]
+      coords: [1293, 455, 1294, 350, 1327, 352, 1357, 397, 1367, 419, 1367, 449, 1375, 484, 1375, 515, 1375, 552, 1359, 578, 1346, 557, 1346, 531, 1323, 535, 1273, 518, 1254, 504, 1191, 535, 1034, 535, 1033, 455]
     },
     {
       id: "2-9c",
       name: "Gang's Treasure",
       shape: "rect",
-      coords: [928,537,1011,457]
+      coords: [928, 537, 1011, 457]
     },
     {
       id: "2-9d",
       name: "Bugbear Barracks",
       shape: "rect",
-      coords: [928,719,1007,558]
+      coords: [928, 719, 1007, 558]
     },
     {
       id: "2-10a",
       name: "Skull in the Cube",
       shape: "poly",
-      coords: [1138,719,1113,717,1113,610,1270,614,1270,794,1139,791,1138,772,1116,773,1115,739,1138,740]
+      coords: [1138, 719, 1113, 717, 1113, 610, 1270, 614, 1270, 794, 1139, 791, 1138, 772, 1116, 773, 1115, 739, 1138, 740]
     },
     {
       id: "2-10b",
       name: "Flooded Room",
       shape: "rect",
-      coords: [1033,717,1111,612]
+      coords: [1033, 717, 1111, 612]
     },
     {
       id: "2-10c",
       name: "Altar to Juiblex",
       shape: "rect",
-      coords: [1034,875,1112,744]
+      coords: [1034, 875, 1112, 744]
     },
     {
       id: "2-10d",
       name: "Caved-In Room",
       shape: "poly",
-      coords: [1139,874,1139,798,1268,800,1271,824,1254,827,1222,837,1211,856,1189,862,1171,873]
+      coords: [1139, 874, 1139, 798, 1268, 800, 1271, 824, 1254, 827, 1222, 837, 1211, 856, 1189, 862, 1171, 873]
     },
     {
       id: "2-11a",
       name: "Hall of Degeneration",
       shape: "poly",
-      coords: [1258,906,1260,923,1372,923,1375,635,1347,636,1344,896,1270,896]
+      coords: [1258, 906, 1260, 923, 1372, 923, 1375, 635, 1347, 636, 1344, 896, 1270, 896]
     },
     {
       id: "2-11b",
       name: "Master of Shadows",
       shape: "rect",
-      coords: [1400,874,1530,743]
+      coords: [1400, 874, 1530, 743]
     },
     {
       id: "2-12",
       name: "Dwarven Tools",
       shape: "poly",
-      coords: [1010,1003,1010,1029,927,1032,927,950,1156,951,1156,976,1089,977,1089,1002,1112,1003,1112,1030,1034,1029,1034,1002,1059,1002,1057,979,960,979,958,1000]
+      coords: [1010, 1003, 1010, 1029, 927, 1032, 927, 950, 1156, 951, 1156, 976, 1089, 977, 1089, 1002, 1112, 1003, 1112, 1030, 1034, 1029, 1034, 1002, 1059, 1002, 1057, 979, 960, 979, 958, 1000]
     },
     {
       id: "2-13a",
       name: "Dumathoin's Altar",
       shape: "poly",
-      coords: [773,1160,772,1002,798,1002,798,974,828,977,828,1001,855,1002,854,1159]
+      coords: [773, 1160, 772, 1002, 798, 1002, 798, 974, 828, 977, 828, 1001, 855, 1002, 854, 1159]
     },
     {
       id: "2-13b",
       name: "Wall of Rust and Bones",
       shape: "poly",
-      coords: [720,1551,720,1390,826,1394,826,1469,803,1472,801,1552]
+      coords: [720, 1551, 720, 1390, 826, 1394, 826, 1469, 803, 1472, 801, 1552]
     },
     {
       id: "2-13c",
       name: "My Room",
       shape: "rect",
-      coords: [644,1446,696,1394]
+      coords: [644, 1446, 696, 1394]
     },
     {
       id: "2-13d",
       name: "Vacant Washroom",
       shape: "rect",
-      coords: [641,1604,697,1548]
+      coords: [641, 1604, 697, 1548]
     },
     {
       id: "2-13e",
       name: '"Nothic to See Here!"',
       shape: "rect",
-      coords: [512,1603,618,1392]
+      coords: [512, 1603, 618, 1392]
     },
     {
       id: "2-13f",
       name: "Snail Home",
       shape: "poly",
-      coords: [1239,1160,1230,1142,1210,1142,1210,1121,1244,1107,1451,1102,1451,1366,1243,1366,1243,1550,1161,1550,1161,1402,1183,1368,1201,1349,1213,1335,1246,1312,1395,1313,1392,1264,1293,1264,1273,1256,1256,1246,1243,1221,1252,1206,1280,1198,1293,1184,1395,1184,1398,1161]
+      coords: [1239, 1160, 1230, 1142, 1210, 1142, 1210, 1121, 1244, 1107, 1451, 1102, 1451, 1366, 1243, 1366, 1243, 1550, 1161, 1550, 1161, 1402, 1183, 1368, 1201, 1349, 1213, 1335, 1246, 1312, 1395, 1313, 1392, 1264, 1293, 1264, 1273, 1256, 1256, 1246, 1243, 1221, 1252, 1206, 1280, 1198, 1293, 1184, 1395, 1184, 1398, 1161]
     },
     {
       id: "2-13g",
       name: "Strike it Rich",
       shape: "poly",
-      coords: [930,1473,930,1286,1142,1289,1142,1324,1119,1342,1109,1364,1119,1392,1132,1414,1141,1438,1139,1471]
+      coords: [930, 1473, 930, 1286, 1142, 1289, 1142, 1324, 1119, 1342, 1109, 1364, 1119, 1392, 1132, 1414, 1141, 1438, 1139, 1471]
     },
     {
       id: "2-14a",
@@ -245,187 +245,187 @@ export const Mapa2 = {
       id: "2-14b",
       name: "Wererat Barracks",
       shape: "rect",
-      coords: [358,1601,436,1523]
+      coords: [358, 1601, 436, 1523]
     },
     {
       id: "2-15",
       name: "The Last Leaf of Clover",
       shape: "poly",
-      coords: [327,1393,317,1378,334,1363,361,1363,358,1340,373,1312,392,1291,410,1284,430,1302,437,1314,435,1393]
+      coords: [327, 1393, 317, 1378, 334, 1363, 361, 1363, 358, 1340, 373, 1312, 392, 1291, 410, 1284, 430, 1302, 437, 1314, 435, 1393]
     },
     {
       id: "2-16",
       name: "Dusty Throne",
       shape: "poly",
-      coords: [512,1370,512,1315,542,1315,548,1321,562,1315,565,1330,574,1340,574,1367]
+      coords: [512, 1370, 512, 1315, 542, 1315, 548, 1321, 562, 1315, 565, 1330, 574, 1340, 574, 1367]
     },
     {
       id: "2-17",
       name: "Hungry Rust Monsters",
       shape: "rect",
-      coords: [278,1708,462,1627]
+      coords: [278, 1708, 462, 1627]
     },
     {
       id: "2-18",
       name: "Cold Storage",
       shape: "rect",
-      coords: [120,1343,228,1234]
+      coords: [120, 1343, 228, 1234]
     },
     {
       id: "2-19a",
       name: "Arachnid Down",
       shape: "rect",
-      coords: [70,1759,125,1651]
+      coords: [70, 1759, 125, 1651]
     },
     {
       id: "2-19b",
       name: "Old Bedchamber",
       shape: "rect",
-      coords: [71,1888,125,1784]
+      coords: [71, 1888, 125, 1784]
     },
     {
       id: "2-19c",
       name: "Sticky Webs",
       shape: "rect",
-      coords: [71,1628,176,1576]
+      coords: [71, 1628, 176, 1576]
     },
     {
       id: "2-19d",
       name: "Spider Warren",
       shape: "rect",
-      coords: [44,1340,100,1237]
+      coords: [44, 1340, 100, 1237]
     },
     {
       id: "2-19e",
       name: "Spider Larder",
       shape: "rect",
-      coords: [43,1474,123,1421]
+      coords: [43, 1474, 123, 1421]
     },
     {
       id: "2-20a",
       name: "2 X 5 = 10",
       shape: "poly",
-      coords: [1215,1809,1243,1809,1243,1785,1271,1786,1271,1759,1296,1758,1297,1653,1218,1654]
+      coords: [1215, 1809, 1243, 1809, 1243, 1785, 1271, 1786, 1271, 1759, 1296, 1758, 1297, 1653, 1218, 1654]
     },
     {
       id: "2-20b",
       name: "Watch Post Barracks",
       shape: "poly",
-      coords: [1191,1811,1191,1651,1139,1651,1138,1706,1111,1706,1112,1811]
+      coords: [1191, 1811, 1191, 1651, 1139, 1651, 1138, 1706, 1111, 1706, 1112, 1811]
     },
     {
       id: "2-20c",
       name: "Arch Gate to Level 6",
       shape: "poly",
-      coords: [1088,1732,1088,1681,1112,1681,1113,1651,1059,1650,1059,1732]
+      coords: [1088, 1732, 1088, 1681, 1112, 1681, 1113, 1651, 1059, 1650, 1059, 1732]
     },
     {
       id: "2-20d",
       name: "Secret Armory",
       shape: "rect",
-      coords: [1088,1756,801,1812]
+      coords: [1088, 1756, 801, 1812]
     },
     {
       id: "2-21",
       name: "Animated Ballistae",
       shape: "rect",
-      coords: [747,1888,1243,1836]
+      coords: [747, 1888, 1243, 1836]
     },
     {
       id: "2-22a",
       name: "Ale Dispenser",
       shape: "rect",
-      coords: [668,1886,745,1809]
+      coords: [668, 1886, 745, 1809]
     },
     {
       id: "2-22b",
       name: '"Brewers Only!"',
       shape: "rect",
-      coords: [643,1838,667,1809]
+      coords: [643, 1838, 667, 1809]
     },
     {
       id: "2-22c",
       name: "Ale Vats",
       shape: "rect",
-      coords: [436,1888,643,1759]
+      coords: [436, 1888, 643, 1759]
     },
     {
       id: "2-22d",
       name: "Barrel Run",
       shape: "poly",
-      coords: [429,1859,429,1789,406,1808,226,1808,226,1838,404,1838]
+      coords: [429, 1859, 429, 1789, 406, 1808, 226, 1808, 226, 1838, 404, 1838]
     },
     {
       id: "2-22e",
       name: "North Ale Storage",
       shape: "rect",
-      coords: [148,1805,254,1707]
+      coords: [148, 1805, 254, 1707]
     },
     {
       id: "2-22f",
       name: "South Ale Storage",
       shape: "rect",
-      coords: [252,1840,148,1938]
+      coords: [252, 1840, 148, 1938]
     },
     {
       id: "2-23a",
       name: "Defaced Dwarves",
       shape: "rect",
-      coords: [1244,2045,770,2098]
+      coords: [1244, 2045, 770, 2098]
     },
     {
       id: "2-23b",
       name: "Hall of Dead Dragons",
       shape: "poly",
-      coords: [252,2013,749,2017,749,2122,542,2122,541,2199,513,2228,486,2228,459,2201,460,2125,251,2122]
+      coords: [252, 2013, 749, 2017, 749, 2122, 542, 2122, 541, 2199, 513, 2228, 486, 2228, 459, 2201, 460, 2125, 251, 2122]
     },
     {
       id: "2-24",
       name: "Dead Adventurer",
       shape: "rect",
-      coords: [71,2146,149,2096]
+      coords: [71, 2146, 149, 2096]
     },
     {
       id: "2-25a",
       name: "Caryatids of Restoration",
       shape: "rect",
-      coords: [775,2280,958,2148]
+      coords: [775, 2280, 958, 2148]
     },
     {
       id: "2-25b:25r",
       name: "Lifelike Statues",
       shape: "poly",
-      coords: [983,2227,983,2122,1034,2120,1033,2175,1009,2175,1011,2200,1083,2198,1083,2177,1059,2177,1059,2120,1114,2120,1114,2200,1137,2200,1137,2120,1192,2120,1192,2173,1168,2172,1168,2200,1239,2197,1239,2177,1215,2175,1214,2120,1270,2122,1270,2195,1293,2195,1293,2120,1374,2120,1376,2173,1325,2175,1325,2198,1448,2195,1445,2177,1396,2175,1398,2120,1482,2120,1481,2198,1502,2195,1502,2119,1530,2122,1532,2227,1502,2230,1507,2306,1474,2306,1477,2228,1454,2228,1451,2306,1424,2306,1424,2228,1401,2228,1398,2308,1374,2308,1370,2228,1351,2228,1346,2303,1317,2305,1320,2227,1298,2227,1300,2305,1268,2308,1264,2230,1245,2227,1243,2305,1214,2303,1214,2230,1189,2227,1190,2303,1162,2306,1164,2227,1140,2227,1140,2306,1112,2308,1109,2230,1089,2228,1084,2303,1059,2306,1058,2227,1034,2228,1037,2305,1005,2301,1008,2228]
+      coords: [983, 2227, 983, 2122, 1034, 2120, 1033, 2175, 1009, 2175, 1011, 2200, 1083, 2198, 1083, 2177, 1059, 2177, 1059, 2120, 1114, 2120, 1114, 2200, 1137, 2200, 1137, 2120, 1192, 2120, 1192, 2173, 1168, 2172, 1168, 2200, 1239, 2197, 1239, 2177, 1215, 2175, 1214, 2120, 1270, 2122, 1270, 2195, 1293, 2195, 1293, 2120, 1374, 2120, 1376, 2173, 1325, 2175, 1325, 2198, 1448, 2195, 1445, 2177, 1396, 2175, 1398, 2120, 1482, 2120, 1481, 2198, 1502, 2195, 1502, 2119, 1530, 2122, 1532, 2227, 1502, 2230, 1507, 2306, 1474, 2306, 1477, 2228, 1454, 2228, 1451, 2306, 1424, 2306, 1424, 2228, 1401, 2228, 1398, 2308, 1374, 2308, 1370, 2228, 1351, 2228, 1346, 2303, 1317, 2305, 1320, 2227, 1298, 2227, 1300, 2305, 1268, 2308, 1264, 2230, 1245, 2227, 1243, 2305, 1214, 2303, 1214, 2230, 1189, 2227, 1190, 2303, 1162, 2306, 1164, 2227, 1140, 2227, 1140, 2306, 1112, 2308, 1109, 2230, 1089, 2228, 1084, 2303, 1059, 2306, 1058, 2227, 1034, 2228, 1037, 2305, 1005, 2301, 1008, 2228]
     },
     {
       id: "2-26a",
       name: "Do Not Feed the Owlbears!",
       shape: "poly",
-      coords: [618,2436,697,2437,697,2384,747,2383,747,2177,724,2177,719,2250,696,2248,699,2202,618,2198,568,2247,565,2383]
+      coords: [618, 2436, 697, 2437, 697, 2384, 747, 2383, 747, 2177, 724, 2177, 719, 2250, 696, 2248, 699, 2202, 618, 2198, 568, 2247, 565, 2383]
     },
     {
       id: "2-26b",
       name: "Secret Tomb",
       shape: "rect",
-      coords: [644,2177,671,2147]
+      coords: [644, 2177, 671, 2147]
     },
     {
       id: "2-26c",
       name: "Halaster's Crushing Eye",
       shape: "rect",
-      coords: [460,2383,541,2278]
+      coords: [460, 2383, 541, 2278]
     },
     {
       id: "2-26d",
       name: "Bloodletting Chamber",
       shape: "rect",
-      coords: [277,2308,332,2149]
+      coords: [277, 2308, 332, 2149]
     },
     {
       id: "2-26e",
       name: "Abandoned Study",
       shape: "rect",
-      coords: [96,2255,148,2175]
+      coords: [96, 2255, 148, 2175]
     }
   ]
 }
@@ -1044,10 +1044,27 @@ export function Salas2({ salaAtual }) {
         <p>This room is identical to area 22e, except the pyramid of barrels has collapsed. Most of the barrels lie smashed on the floor. Fifty-nine of them remain intact, their ale preserved. Another three appear to be intact but are, in fact, three <a href="https://5e.tools/bestiary.html#mimic_xmm" target="blank">mimics</a> placed here by Halaster. The three hide within 10 feet of one another and fight together.</p>
       </div>}
       {salaAtual === "2-23a" && <div className='sala' id='2-23a'>
+        <p><strong>Light.</strong> The walls climb 15 feet, then angle inward to create a peaked, 30-foot-high ceiling. The sloped upper walls have red glowing crystals set into them. These crystals fill the hall with dim light. (Crystals pried out of their fixtures go dark.)<br></br>
+
+          <strong>Carvings.</strong> The lower walls were once lined with <a target="blank" href="dwarven_carvings.png">carvings</a> depicting dwarves pushing mine carts toward the west.<br></br>
+
+          <strong>Dwarf-Guarded Doors.</strong> A 20-foot-tall double door stands closed at the west end of the hall. Carved into the walls flanking the double door stand armored dwarves, their stony beards flowing out of great helms that conceal their facial features.</p>
       </div>}
       {salaAtual === "2-23b" && <div className='sala' id='2-23b'>
+        <p><strong>Ceiling.</strong> The 30-foot-high vaulted ceiling of this room is supported every 20 feet or so by thick stone arches.<br></br>
+
+          <strong>Skeletal Displays.</strong> Standing in the hall are the skeletons of four Huge dragons, their bones held together by wire and cement. A few pieces of each dragon have broken off and fallen to the floor. A fifth dragon skeleton in a similar state of disrepair fills an alcove to the south.</p>
+
+        <p>This hall contains the posed, inanimate skeletons of five adult dragons—one each of red, blue, black, green, and white. The red dragon skeleton occupies the southern alcove, while the others are lined up in the main hall. The skeletons are harmless.</p>
       </div>}
       {salaAtual === "2-24" && <div className='sala' id='2-24'>
+        <p>What was once a dwarven shrine to <a href="https://www.thievesguild.cc/gods/god?godid=149">Dumathoin</a> is now the tomb of a long-dead adventurer.</p>
+
+        <p>Splayed across a broken stone bench in the middle of the room are the skeletal remains of a tiefling clad in rotted leather armor. The skeleton clutches a quarterstaff that has become brittle with age. A tattered backpack contains adventuring gear that has rotted or rusted away.</p>
+
+        <p>Casting a <a href="https://5e.tools/spells.html#speak%20with%20dead_xphb">speak with dead</a> spell on the skeleton reveals that the tiefling, Savir, was a monk who fell prey to a cloaker. Savir's spirit doesn't know what became of his adventuring companions or the cloaker. If questioned about Undermountain, Savir's spirit reveals that there's an elven tomb nearby with a secret door in the north wall that neither he nor his companions could open. (The spirit is referring to area 26a but doesn't remember how to get there.)</p>
+
+        <p>A <a href="https://5e.tools/spells.html#ceremony_xge">ceremony</a> spell may be used to sactify the shrine again. At which point it becomes an area safe from Halaster's magic and a dwarf may pray for 10 minutes to receive inspiration once per day.</p>
       </div>}
       {salaAtual === "2-25a" && <div className='sala' id='2-25a'>
         <p><strong>Caryatids.</strong> Supporting the 20-foot-high ceiling are four pillars of white marble, each shaped in the likeness of a stoic female elf in flowing robes with a flowering branch clutched to her chest. The caryatids face inward.<br></br>

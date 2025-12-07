@@ -473,13 +473,13 @@ export function Salas1({ salaAtual }) {
           Casting spells behind magic gates.</p>
       </div>}
       {salaAtual === "1-2a" && <div className='sala' id='1-2a'>
-        <p>At the west end of a 20-foot-wide hall (area 2a), stairs descend 10 feet to a room lined with pillars (area 2b).<br></br>
+        <p>At the west end of a 20-foot-wide hall (area 2a), stairs descend 10 feet to a room lined with pillars (area 2b).</p>
 
-          <strong>Bas-Reliefs.</strong> Every 10-foot section of wall has a 9-foot-high, 4-foot-wide, 3-inch-deep door-shaped recess containing a bas-relief carving of a demon. Each relief depicts a different kind of demon (see below).<br></br>
+        <p><strong>Bas-Reliefs.</strong> Every 10-foot section of wall has a 9-foot-high, 4-foot-wide, 3-inch-deep door-shaped recess containing a bas-relief carving of a demon. Each relief depicts a different kind of demon (see below).<br></br>
 
-          <strong>Skeleton.</strong> A kenku skeleton lies on the floor, one of its thin arms pointing toward a bas-relief of a nalfeshnee demon on the south wall. (Halaster artfully placed the skeleton here to help adventurers find the secret door to area 3.)<br></br>
+          <strong>Skeleton.</strong> A kenku skeleton lies on the floor, one of its thin arms pointing toward a bas-relief of a nalfeshnee demon on the south wall. (Halaster artfully placed the skeleton here to help adventurers find the secret door to area 3.)</p>
 
-          The <a target="blank" href="demon.reliefsN.jpg">carvings on the north wall</a> of area 2a depict (from east to west) a balor, a barlgura, a chasme, a dretch, a glabrezu, a goristro, and a hezrou. The <a target="blank" href="demon.reliefsS.jpg">carvings on the south wall</a> depict (from west to east) a marilith, a nalfeshnee, a quasit, a shadow demon, a vrock, and a yochlol. The recessed wall that contains the nalfeshnee carving has a secret door leading to area 3. The recessed wall that contains the dretch carving has another secret door, which leads to area 4. The dretch carving has half-inch spy-holes for eyes. These holes are detected when the secret door is found.</p>
+        <p>The <a target="blank" href="demon.reliefsN.jpg">carvings on the north wall</a> of area 2a depict (from east to west) a balor, a barlgura, a chasme, a dretch, a glabrezu, a goristro, and a hezrou. The <a target="blank" href="demon.reliefsS.jpg">carvings on the south wall</a> depict (from west to east) a marilith, a nalfeshnee, a quasit, a shadow demon, a vrock, and a yochlol. The recessed wall that contains the nalfeshnee carving has a secret door leading to area 3. The recessed wall that contains the dretch carving has another secret door, which leads to area 4. The dretch carving has half-inch spy-holes for eyes. These holes are detected when the secret door is found.</p>
       </div>}
 
       {salaAtual === "1-2b" && <div className='sala' id='1-2b'>

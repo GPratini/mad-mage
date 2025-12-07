@@ -44,3 +44,20 @@ textarea {
   resize: none;
   overflow: hidden;
 }
+
+p {
+  font-family: "Bookinsanity";
+	src: url("../fonts/Bookinsanity.otf") format("opentype");
+}
+
+h1 {
+  font-family: "Nodesto";
+	src: url("../fonts/Nodesto\ Caps\ Condensed.otf") format("opentype");
+	font-weight: bold;
+}
+
+h2 {
+  font-family: "Mr Eaves Small Caps";
+	src: url("../fonts/Mr\ Eaves\ Small\ Caps.otf") format("opentype");
+	font-weight: normal;
+}
