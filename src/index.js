@@ -59,9 +59,9 @@ const Mapper = (props) => {
   }; */
 
   const clickArea = (area) => {
-    if (area.id === "upperSkullport") {
+    if (area.name === "upperSkullport") {
       clickedElevador(24);
-    } else if (area.id === "skullIsland") {
+    } else if (area.name === "skullIsland") {
       clickedElevador(25);
     } else {
       setSalaAtiva(area.id);

@@ -45,9 +45,10 @@ textarea {
   overflow: hidden;
 }
 
-p {
+p , ul , ol {
   font-family: "Bookinsanity";
 	src: url("../fonts/Bookinsanity.otf") format("opentype");
+  font-size: 1.1em;
 }
 
 h1 {
