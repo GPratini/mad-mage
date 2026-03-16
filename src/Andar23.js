@@ -147,7 +147,7 @@ export function Salas23({ salaAtual }) {
         <p></p>
       </div>}
       {salaAtual === "23-11" && <div className='sala' id='23-11'>
-        <p>These open-air spaces are dreary and forlorn. TESTETESTETESTETESTETESTETESTE</p>
+        <p>These open-air spaces are dreary and forlorn.</p>
 
         <h2>Old Fish Market</h2>
         <p>Closed shops and warehouses enclose an abandoned market dotted with empty fish stands.</p>
