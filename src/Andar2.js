@@ -426,6 +426,30 @@ export const Mapa2 = {
       name: "Abandoned Study",
       shape: "rect",
       coords: [96, 2255, 148, 2175]
+    },
+    {
+      id: "2-27",
+      name: "Provas - Atrito",
+      shape: "poly",
+      coords: [1480,1263,1503,1262,1506,1053,1269,1057,1269,1082,1477,1085]
+    },
+    {
+      id: "2-28",
+      name: "Provas - Gases",
+      shape: "poly",
+      coords: [1374,1420,1372,1393,1272,1393,1271,1573,1242,1574,1242,1604,1294,1599,1296,1421]
+    },
+    {
+      id: "2-29",
+      name: "Provas - Magnetismo",
+      shape: "rect",
+      coords: [1010,1577,1035,1734]
+    },
+    {
+      id: "2-30",
+      name: "Provas - Condutividade",
+      shape: "rect",
+      coords: [490,1630,775,1652]
     }
   ]
 }
@@ -497,7 +521,7 @@ export function Salas2({ salaAtual }) {
 
         <h2>Shaved Dwarf.</h2>
 
-        <p>The beardless dwarf is <a href="https://5e.tools/bestiary.html#copper%20stormforge_wdmm" target="blank">Copper Stormforge</a>, a member of the Fine Fellows of Daggerford adventuring party. His hatred for goblins increased tenfold when they chopped off his beard, and if he is set free, he tries to kill every one of them.</p>
+        <p>The beardless dwarf is <a href="https://5e.tools/bestiary.html#copper%20stormforge_wdmm" target="blank">Copper Stormforge</a> (<a href="https://5e.tools/bestiary.html#axe%20of%20mirabar%20soldier_skt">alternate stats</a>), a member of the Fine Fellows of Daggerford adventuring party. His hatred for goblins increased tenfold when they chopped off his beard, and if he is set free, he tries to kill every one of them.</p>
 
         <p>As a reward for setting him free, Copper gives his liberators what he claims is an authentic map of the Sargauth Level (level 3). Copper folded the map into a tiny package and tucked it between his butt cheeks to hide it from his captors. He doesn't realize the map is fake and utterly worthless.</p>
 
@@ -677,7 +701,7 @@ export function Salas2({ salaAtual }) {
 
           <strong>Furnishings.</strong> Crates, barrels, and seven wooden cots line the walls.<br></br>
 
-          <strong>Xanathar Guild.</strong> Seven Xanathar Guild members (NE human <a href="https://5e.tools/bestiary.html#thug_xmm" target="blank">thugs</a>) and their leader, Shunn "Spider Eyes" Shurreth (see "Shunn Shurreth" below), gather around a campfire in the middle of the hall. Two <a href="https://5e.tools/bestiary.html#intellect%20devourer_xmm" target="blank">intellect devourers</a> have taken residence in the skulls of two Xanathar Guild members. The creatures use their Detect Sentience trait to telepathically detect intelligent creatures approaching.</p>
+          <strong>Xanathar Guild.</strong> Seven Xanathar Guild members (NE human <a href="https://5e.tools/bestiary.html#tough_xmm" target="blank">thugs</a>) and their leader, Shunn "Spider Eyes" Shurreth (see "Shunn Shurreth" below), gather around a campfire in the middle of the hall. Two <a href="https://5e.tools/bestiary.html#intellect%20devourer_xmm" target="blank">intellect devourers</a> have taken residence in the skulls of two Xanathar Guild members. The creatures use their Detect Sentience trait to telepathically detect intelligent creatures approaching.</p>
 
         <p>Shunn and his thugs can't be surprised if the intellect devourers sense intruders approaching. If an intellect devourer's host is killed, it tries to find another.</p>
 
@@ -745,7 +769,7 @@ export function Salas2({ salaAtual }) {
 
         <p><strong>Light.</strong> Freestanding iron torch sconces in the four corners of the room have continual flame spells cast upon them.<br></br>
 
-          <strong>Midna.</strong> Midna Tauberth (NE female human <a href="https://5e.tools/bestiary.html#priest_xmm" target="blank">priest</a> of Shar) relaxes in one of several overstuffed chairs in the middle of the room, with a <a href="https://5e.tools/bestiary.html#shadow%20mastiff_mpmm" target="blank">shadow mastiff</a> laying relaxed at her side (another is invisible nearby). Around her neck, she wears two holy symbols: one shaped like a gold coin (the symbol of <a href="https://forgottenrealms.fandom.com/wiki/Waukeen" target="blank">Waukeen</a>, god of trade), the other a black disk outlined in purple (the symbol of <a href="https://forgottenrealms.fandom.com/wiki/Shar" target="blank">Shar</a>, god of darkness and loss).<br></br>
+          <strong>Midna.</strong> Midna Tauberth (NE female human <a href="https://5e.tools/bestiary.html#astral%20elf%20star%20priest_bam" target="blank">priest</a> of Shar) relaxes in one of several overstuffed chairs in the middle of the room, with a <a href="https://5e.tools/bestiary.html#shadow%20mastiff_mpmm" target="blank">shadow mastiff</a> laying relaxed at her side (another is invisible nearby). Around her neck, she wears two holy symbols: one shaped like a gold coin (the symbol of <a href="https://forgottenrealms.fandom.com/wiki/Waukeen" target="blank">Waukeen</a>, god of trade), the other a black disk outlined in purple (the symbol of <a href="https://forgottenrealms.fandom.com/wiki/Shar" target="blank">Shar</a>, god of darkness and loss).<br></br>
 
           <strong>Furnishings.</strong> Empty bookshelves and desks line the walls. Against the south wall stands a long banquet table bearing fresh foodstuffs on copper platters and copper flagons filled to the brim with wine. A portrait of a smiling Halaster hangs above the table.</p>
 
@@ -938,7 +962,7 @@ export function Salas2({ salaAtual }) {
         <p><strong>Treasure.</strong> The dead nothic has no treasure. A thorough search of the goblin corpses yields 20 cp, 18 sp, 5 gp, and a silvered dagger.</p>
       </div>}
       {salaAtual === "2-20a" && <div className='sala' id='2-20a'>
-        <p>The Xanathar Guild forces stationed here include five human <a href="https://5e.tools/bestiary.html#thug_xmm" target="blank">thugs</a>, eight <a href="https://5e.tools/bestiary.html#bugbear_xmm" target="blank">bugbears</a>, and their leader, <a href="https://5e.tools/bestiary.html#berserker_xmm" target="blank">Nadia the Unbent</a>. Two spectators provides added security.</p>
+        <p>The Xanathar Guild forces stationed here include five human <a href="https://5e.tools/bestiary.html#tough_xmm" target="blank">thugs</a>, eight <a href="https://5e.tools/bestiary.html#bugbear_xmm" target="blank">bugbears</a>, and their leader, <a href="https://5e.tools/bestiary.html#warrior%20veteran_xmm" target="blank">Nadia the Unbent</a>. Two spectators provides added security.</p>
 
         <p><strong>Watchers.</strong> Two <a href="https://5e.tools/bestiary.html#spectator_xmm" target="blank">spectators</a> float near the 20-foot-high ceiling of this chamber, out of melee range. Painted in white around their central eye is a circle with ten equidistant spokes radiating outward from its circumference (Xanathar's symbol).<br></br>
 
@@ -947,7 +971,7 @@ export function Salas2({ salaAtual }) {
         <p>The spectators attack anyone who enters the room without brandishing or wearing the symbol of Xanathar. Combat in this room brings reinforcements from area 20b.</p>
       </div>}
       {salaAtual === "2-20b" && <div className='sala' id='2-20b'>
-        <p><strong>Xanathar Guild.</strong> Unless they are drawn to area 20a by sounds of combat, the following creatures are training here: a 7-foot-tall, powerfully built woman with shaggy black hair and pale skin named <a href="https://5e.tools/bestiary.html#berserker_xmm" target="blank">Nadia the Unbent</a>, five human <a href="https://5e.tools/bestiary.html#thug_xmm" target="blank">thugs</a> (three women and two men), and five <a href="https://5e.tools/bestiary.html#bugbear_xmm" target="blank">bugbears</a>.<br></br>
+        <p><strong>Xanathar Guild.</strong> Unless they are drawn to area 20a by sounds of combat, the following creatures are training here: a 7-foot-tall, powerfully built woman with shaggy black hair and pale skin named <a href="https://5e.tools/bestiary.html#warrior%20veteran_xmm" target="blank">Nadia the Unbent</a>, five human <a href="https://5e.tools/bestiary.html#tough_xmm" target="blank">thugs</a> (three women and two men), and five <a href="https://5e.tools/bestiary.html#bugbear_xmm" target="blank">bugbears</a>.<br></br>
 
           <strong>Blood Circle.</strong> Painted in blood on the middle of the floor is a 10-foot-diameter circle with ten equidistant spokes extending outward from its circumference (Xanathar's symbol).<br></br>
 
@@ -1154,17 +1178,33 @@ export function Salas2({ salaAtual }) {
 
         <p>The books cover the subjects of alchemy, dwarven and elven history, engineering, gemcraft, the study of monstrosities, and weather prediction. All of them are falling apart, but stuffed among the mundane tomes is a badly burned wizard's spellbook that still contains the following spells: comprehend languages, crown of madness, darkvision, gaseous form, ray of sickness, remove curse, Tenser's floating disk, and unseen servant.</p>
       </div>}
-      {salaAtual === "2-c1" && <div className='sala' id='2-c1'>
-        <p>This corridor connects area 8 and area 17. In the middle of it is a pit as wide as the corridor and 20 feet long. The pit seems only 10 feet deep, but the bottom is an illusion, and it is actually 80 feet deep. A creature can make a DC 16 Intelligence (Investigation) check to notice the illusion.</p>
+      {salaAtual === "2-27" && <div className='sala' id='2-27'>
+        <p>Na parede do corredor proximo ao começo de cada lado dessa parte do corredor está um escrito "1. Se um idiota se movendo a 1,5 m/s subitamente se encontra num corredor sem atrito, quanta força será necessaria para para-lo?"</p>
+
+        <p>Esta parte do corredor é completamente lisa no chão paredes e teto e extremamente escorregadia. Qualquer personagem que tente ficar de pé cai imediatamente e se estivessem em movimento a inercia os manterá em movimento na mesma direção.</p>
+
+        <p>Na esquina há um buraco de 10 pés por 10 pés e 20 pés de profundidade. O buraco e as paredes dele são de pedra normal como o resto do andar e não escorregam. Em duas paredes do buraco existem ganchos que os criminosos do andar usam para prender cordas longas e passar facilmente pela armadilha.</p>
       </div>}
-      {salaAtual === "2-c2" && <div className='sala' id='2-c2'>
-        <p>This corridor connects area 21 to area 23. In the middle of it is a 20-foot-deep, 10-foot-wide pit with spikes at the bottom. A creature that falls into the pit takes the normal 2d6 bludgeoning damage from the fall, plus 5d4 piercing damage from the spikes.</p>
+      {salaAtual === "2-28" && <div className='sala' id='2-28'>
+        <p>Na parede do corredor proximo ao começo de cada lado dessa parte do corredor está um escrito "2. O gás hidrogenio e seus compostos tem algumas caracteristicas em comum, quais são?"</p>
 
-        <p>Right after the pit is another identical pit, but this one is covered by a trapdoor that opens to the pit if 20 or more pounds of pressure a put on it.</p>
+        <p>Uma pequena escada sobe no corredor e o teto sobe junto, de forma que toda essa seção é mais alta que o resto do corredor.</p>
+          
+        <p>A seção inteira está cheia de sulfato de hidrogenio, que é altamente toxico e inflamavel. Qualquer chama ou faisca causa uma explosão equivalente a uma bola de fogo que não pode ser desviada e respirar o gás causa 11 dano de veneno. A seção inteira leva 2 minutos para ser passada e correr ou falar reduz a capacidade do personagem de segurar a respiração.</p>
+      </div>}
+      {salaAtual === "2-29" && <div className='sala' id='2-29'>
+        <p>Na parede do corredor proximo ao começo de cada lado dessa parte do corredor está um escrito "3. Como se pode criar um campo magnetico a partir de materiais não naturalmente magnetizados?"</p>
 
-        <p>The trapdoor can be locked or unlocked by pressing hidden buttons on the wall, which can be found on either side with a successful DC 16 Wisdom (Perception) check.</p>
+        <p>O corredor logo a seguir tem o teto mais alto que o normal, com 40 pés de altura. Um imã muito forte está no teto e qualquer objeto de metal magnetico que entre na area é imediatamente puxado para o teto, que está cheio de armas e outros objetos de metal presos. Criaturas usando armadura de metal são puxadas junto e tomam 3d4 de dano perfurante e 3d6 de dano contundente ao atingir o teto.</p>
 
-        <p><a href="double.pit.png" target="blank">Example image.</a></p>
+        <p>Uma alavanca que desliga o imã está no teto no meio do corredor. Se o imã for desligado os objetos presos caem e causam 3d4 de dano perfurante.</p>
+      </div>}
+      {salaAtual === "2-30" && <div className='sala' id='2-30'>
+        <p>Na parede do corredor proximo ao começo de cada lado dessa parte do corredor está um escrito "4. Qual a condutividade eletrica de um grupo de idiotas?" Abaixo da pergunta um pequeno cabo de cobre sai da parede.</p>
+
+        <p>20 ft. (6 metros) de distancia, do outro lado do corredor, há um outro cabo de cobre saindo da parede e seguindo no corredor, 30 ft. (9 metros) depois há uma porta de pedra pesada.</p>
+
+        <p>Se uma corrente eletrica estiver passando de um cabo ao outro, a porta fica aberta, mas ela fecha em 1 segundo quando a corrente acaba. Se os personagens fizerem uma corrente com os proprios corpos conectando os cabos, a corrente se forma mas eles levam 2d8 dano de raio pra cada turno que ficam segurando.</p>
       </div>}
     </div>
   );

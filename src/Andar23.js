@@ -175,12 +175,12 @@ export function Salas23({ salaAtual }) {
       {salaAtual === "23-13" && <div className='sala' id='23-13'>
         <p>A cheery rock gnome named Krystaleen runs this shop. She is the niece of the pawnshop's previous owner, Thimblewine, who died of old age a few years ago.</p>
 
-        <p>Krystaleen buys reusable goods from visitors at 60% normal cost (as listed in the Player's Handbook). If the characters are looking to buy a nonmagical item, there is a 10% chance that Krystaleen has such an item in stock. All merchandise is sold at five times the normal cost.</p>
+        <p>Krystaleen buys reusable goods from visitors at 60% normal cost (as listed in the Player's Handbook). If the characters are looking to buy a nonmagical item, there is a 10% chance that Krystaleen has such an item in stock. All merchandise is sold at three times the normal cost.</p>
 
-        <p>She also has a host of interesting magical items on display and is keen:</p>
+        <p>She also has some interesting magical items on display and is keen to sell:</p>
         <ul>
-          <li></li>
-          <li></li>
+          <li><strong>Oleo da amargura (800 gp):</strong> Quando aplicado a uma armadura, qualquer criatura que te engula deve fazer um savamento de constituição DC 15 no final de cada turno ou imediatamente te cuspir. Qualquer criatura que te ataque com a boca deve fazer o mesmo salvamento em mordidas subsequentes ou ter desvantagem no ataque.</li>
+          <li><strong>Capacete para-raios (1300gp):</strong> O usuario tem resistencia a dano de raio mas qualquer efeito eletrico numa area de 60 ft. em volta sempre vai nele independente do alvo original.</li>
           <li></li>
           <li></li>
           <li></li>
