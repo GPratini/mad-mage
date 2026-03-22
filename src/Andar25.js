@@ -132,6 +132,8 @@ export function Salas25({ salaAtual }) {
       </div>}
       {salaAtual === "25-10b" && <div className='sala' id='25-10b'>
         <p>A hungry <a href="https://5e.tools/bestiary.html#kuo-toa_xmm">kuo-toa</a> named Hlool crouches in the middle of this cave. If the characters give it food, Hlool eats the food, then dives to the bottom of the River Sargauth, returns minutes later with a bundled-up <a href="https://5e.tools/items.html#cloak%20of%20the%20manta%20ray_xdmg">cloak of the manta ray</a> that it took from a dead adventurer, and gives it to the characters as a thank-you gift.</p>
+
+        <p>Hlool knows of the underwater cave where mages can be transformed into flameskulls and the thirteen can be controled, but doesn't know what it is.</p>
       </div>}
     </div >
   );
