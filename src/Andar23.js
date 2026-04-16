@@ -297,7 +297,7 @@ export function Salas23({ salaAtual }) {
         <p>Se outros habitantes de Skullport são questionados sobre o local, dizem que o antigo dono, Droon Pedranegra, ficou doido gritando que foi amaldiçoado e fugiu do Porto das Sombras jogando todo dinheiro e joias dele fora no caminho. Todos que pegaram o dinheiro e joias acabaram mortos ou seriamente feridos depois então decidiram lacrar o bar com tudo que estava dentro.</p>
 
         <p>Dentro está um bar caindo aos pedaços. Todos os objetos de valor foram levados do bar, exceto 1d100 gp em moedas diversas num pequeno cofre aberto debaixo do balcão.
-          No andar de cima há uma pequena casa, onde o dono morava. Ela consiste em uma mesa de jantar, um forno a lenha, um armário grande, uma cama, uma mesa de escritório e vários barris de cerveja velha empilhados.</p>
+          No andar de cima há uma <a target="blank" href="casa_droon.jpg">pequena casa</a>, onde o dono morava. Ela consiste em uma mesa de jantar, um forno a lenha, um armário grande, uma cama, uma mesa de escritório e vários barris de cerveja velha empilhados.</p>
 
         <p>No armário e ao longo das paredes a várias decorações e acessórios de ouro, que totalizam 800gp.</p>
 
