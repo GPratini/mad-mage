@@ -82,6 +82,7 @@ export function Salas25({ salaAtual }) {
     <div>
       {salaAtual == null && <div className='sala'>
         <h2>Skull Island Weaponry</h2>
+        
         <p>The fortress on Skull Island bristles with ballistae and flame cannons. Before one of these weapons can be fired, it must be loaded and aimed. It takes one action to load a weapon, one action to aim it, and one action to fire it. Each ballista or flame cannon is a Large object with AC 15, 50 hit points, and immunity to poison and psychic damage.</p>
 
         <p><strong>Ballista.</strong> Ranged Weapon Attack: +6 to hit, range 120/480 ft., one target. Hit: 16 (3d10) piercing damage. <br></br>

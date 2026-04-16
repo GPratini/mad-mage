@@ -57,10 +57,40 @@ export const Mapa23 = {
       coords: [365, 2894, 370, 2819, 423, 2825, 425, 2872, 398, 2870, 398, 2892]
     },
     {
-      id: "",
-      name: "",
+      id: "23-13",
+      name: "Thimblewine's Pawnshop",
+      shape: "rect",
+      coords: [638, 2446, 705, 2488]
+    },
+    {
+      id: "23-14",
+      name: "Heralds' Meet",
       shape: "circle",
-      coords: []
+      coords: [494, 2326, 65]
+    },
+    {
+      id: "23-15",
+      name: "The Black Tankard",
+      shape: "poly",
+      coords: [543, 2441, 543, 2370, 569, 2370, 569, 2317, 636, 2317, 634, 2390, 614, 2388, 607, 2444]
+    },
+    {
+      id: "23-16",
+      name: "Gyudd's Distillery",
+      shape: "poly",
+      coords: [798, 2583, 776, 2588, 778, 2506, 803, 2506, 803, 2464, 874, 2468, 871, 2488, 929, 2488, 925, 2555, 800, 2555]
+    },
+    {
+      id: "23-17",
+      name: "Skull Square",
+      shape: "circle",
+      coords: [1029, 2189, 55]
+    },
+    {
+      id: "23-18",
+      name: "The Sea Chest",
+      shape: "rect",
+      coords: [1111, 2492, 1067, 2557]
     },
     {
       id: "23-19",
@@ -69,16 +99,16 @@ export const Mapa23 = {
       coords: [1375, 2457, 1377, 2437, 1355, 2437, 1355, 2386, 1371, 2386, 1375, 2361, 1453, 2364, 1451, 2415, 1426, 2415, 1426, 2461]
     },
     {
-      id: "",
-      name: "",
+      id: "23-20",
+      name: "Dark Harvest Market",
       shape: "circle",
-      coords: []
+      coords: [1678, 2525, 39]
     },
     {
-      id: "",
-      name: "",
-      shape: "circle",
-      coords: []
+      id: "23-21",
+      name: "The Sword and Sextant",
+      shape: "poly",
+      coords: [1930, 2559, 1932, 2486, 1988, 2430, 2021, 2464, 1975, 2510, 1977, 2532, 1950, 2563]
     },
     {
       id: "23-22",
@@ -93,10 +123,58 @@ export const Mapa23 = {
       coords: [1642, 2246, 1693, 2224]
     },
     {
-      id: "",
-      name: "",
-      shape: "circle",
-      coords: []
+      id: "23-23",
+      name: "The Feathered Rat",
+      shape: "rect",
+      coords: [1542, 2082, 1506, 2128]
+    },
+    {
+      id: "23-24",
+      name: "Thaglar's Foundry",
+      shape: "poly",
+      coords: [1957, 1982, 1955, 2104, 1975, 2124, 1999, 2104, 1992, 2060, 2019, 2055, 2019, 2035, 2048, 2031, 2050, 2000, 2072, 2002, 2092, 1962, 2063, 1944, 2048, 1962, 2052, 1982]
+    },
+    {
+      id: "23-25",
+      name: "The Bat's Roost",
+      shape: "rect",
+      coords: [512, 719, 447, 783]
+    },
+    {
+      id: "23-26",
+      name: "The Keel Hall",
+      shape: "poly",
+      coords: [587, 1119, 589, 1030, 612, 1025, 612, 977, 687, 983, 687, 1050, 711, 1048, 711, 1076, 636, 1072, 634, 1121]
+    },
+    {
+      id: "23-27",
+      name: "The Poisoned Quill",
+      shape: "rect",
+      coords: [1038, 721, 973, 783]
+    },
+    {
+      id: "23-28",
+      name: "Twinbeard's Traps",
+      shape: "rect",
+      coords: [1069, 910, 978, 1023]
+    },
+    {
+      id: "23-29",
+      name: "Sargauth's Bounty",
+      shape: "poly",
+      coords: [1255, 908, 1253, 997, 1164, 997, 1160, 957, 1140, 957, 1138, 934, 1189, 937, 1187, 914]
+    },
+    {
+      id: "23-30",
+      name: "The Lanternlighter's",
+      shape: "rect",
+      coords: [1229, 675, 1187, 768]
+    },
+    {
+      id: "23-31",
+      name: "Dalagor's Fortress",
+      shape: "poly",
+      coords: [1806, 1019, 1906, 1021, 1908, 1001, 1955, 1003, 1955, 950, 1910, 950, 1906, 928, 1886, 930, 1884, 906, 1833, 908, 1835, 932, 1808, 930]
     }
   ]
 }
@@ -114,6 +192,12 @@ export function Salas23({ salaAtual }) {
         <p>The 90-foot-high cavern ceiling is covered with a forest of stalactites.</p>
 
         <p>Most of the lanterns that once illuminated Skullport are gone, turned to rust or stolen by thieves long ago. Denizens carry their own light sources or rely on darkvision to see. Flameskulls are often mistaken from a distance for bobbing torches as they drift through town.</p>
+
+        <h2>Lost Boy</h2>
+
+        <p>Delvin and his friend Abel "borrowed" a boat a couple days ago and went to explore level 3. They ended up caught by the hags there and only Abel managed to escape.</p>
+
+        <p>If the adventurers haven't saved Delvin yet, the whole town is talking about the missing child and offer rewards if they go find him. Xanathar's Guild doesn't care and will not get involved.</p>
 
         <h2>The Winches and Locks</h2>
 
@@ -208,7 +292,22 @@ export function Salas23({ salaAtual }) {
         <p>This town square is littered with trash. Nearly all the buildings that surround it are abandoned.</p>
       </div>}
       {salaAtual === "23-15" && <div className='sala' id='23-15'>
-        <p>COLOCAR ALGO INTERESSANTE</p>
+        <p>O bar está fechado e todo tapado com pedaços de madeira de fungo.</p>
+
+        <p>Se outros habitantes de Skullport são questionados sobre o local, dizem que o antigo dono, Droon Pedranegra, ficou doido gritando que foi amaldiçoado e fugiu do Porto das Sombras jogando todo dinheiro e joias dele fora no caminho. Todos que pegaram o dinheiro e joias acabaram mortos ou seriamente feridos depois então decidiram lacrar o bar com tudo que estava dentro.</p>
+
+        <p>Dentro está um bar caindo aos pedaços. Todos os objetos de valor foram levados do bar, exceto 1d100 gp em moedas diversas num pequeno cofre aberto debaixo do balcão.
+          No andar de cima há uma pequena casa, onde o dono morava. Ela consiste em uma mesa de jantar, um forno a lenha, um armário grande, uma cama, uma mesa de escritório e vários barris de cerveja velha empilhados.</p>
+
+        <p>No armário e ao longo das paredes a várias decorações e acessórios de ouro, que totalizam 800gp.</p>
+
+        <p>Um teste de investigação DC 18 na mesa revela um compartimento secreto onde estão papeis com escritas magicas e em infernal. Eles detalham como invocar um diabo que oferece dinheiro. Investigação dos barris DC 15 revela que escondido no meio de uma pilha a um medalhão de ouro com um símbolo. Religião DC 15 revela que o símbolo é de <a href="https://forgottenrealms.fandom.com/wiki/Mammon">Mammon</a>, arquediabo da avareza.</p>
+
+        <p>O medalhão tem um <a href="https://5e.tools/bestiary.html#gilded%20devil_tob1-2023">Gilded Devil</a> preso dentro que foi invocado por Droon e preso. Ele deu riquezas a Droon em troca de ser liberto, mas as riquezas eram amaldiçoadas e Droon percebeu antes de libertar o diabo.</p>
+
+        <p>Agora o diabo oferece riquezas a qualquer um que tocar o medalhão em troca de ser liberto, mas quer ser liberto antes. Para libertá-lo, basta quebrar o medalhão.</p>
+
+        <p>Quaisquer personagens que pegarem o dinheiro ou joias da casa ou bar fica amaldiçoado enquanto carregar as riquezas. Toda vez que for jogar um dado, tem 50% de chance de ter desvantagem e sempre que levar dano tem 50% de chance de levar 1d8 de dano necrótico a mais.</p>
       </div>}
       {salaAtual === "23-16" && <div className='sala' id='23-16'>
         <p>This dwarven distillery is a three-story stone building with a sagging roof. <a href="https://forgottenrealms.fandom.com/wiki/Gyudd">Gyudd</a>, the shield dwarf distiller, makes Amberjack (a sherry), bitter Goat's Head Ale, and a muddy alcoholic swill called Wyrmwizz. The cost of a 5-gallon cask is 20 gp for Amberjack, 10 gp for Goat's Head Ale, and 5 gp for Wyrmwizz</p>
@@ -272,25 +371,85 @@ export function Salas23({ salaAtual }) {
       {salaAtual === "23-23" && <div className='sala' id='23-23'>
         <p>Ulvira Snowveins, a venerable half-elf and Harper spy, runs this single-story pet store. Ulvira's merchandise and prices are as follows: bat (5 cp), cat (5 sp), frog or toad (5 cp), giant fire beetle (25 gp), giant rat (10 sp), lizard (5 cp), rat (5 cp), spider (5 cp), and stirge (10 sp).</p>
 
-        <p>If the characters seem interested, Ulvira lets them know the Harpers have a plan to disrupt Xanathar's Guild but need strong infiltrators.</p>
+        <p>If the characters seem interested, Ulvira lets them know the Harpers have a plan to disrupt Xanathar's Guild but need strong infiltrators. She also knows that the Zhentarim have their own plans but doesn't know what it is and advises against simply changing one gang for another.</p>
       </div>}
-      {salaAtual === "23-" && <div className='sala' id='23-'>
-        <p></p>
+      {salaAtual === "23-24" && <div className='sala' id='23-24'>
+        <p>Skullport's ugly stone foundry stands four stories tall, maintained in poor condition. Individuals passing near the exterior risk being enveloped in a cloud of superheated steam.</p>
+
+        <p>Inside, duergar smiths under the command of a brutal duergar taskmaster named Thaglar Xundorn fashion weapons, armor, and tools. The interior of the foundry is cramped and oppressive. Poor ventilation combined with the extreme heat of smelting frequently raise temperatures to unbearable levels.</p>
+
+        <p>The duergar craft weapons and armor themselves at small personal forges, producing items noted for their sinister design, often incorporating hooks, conceal blades, and hidden poison reservoirs.</p>
       </div>}
-      {salaAtual === "23-" && <div className='sala' id='23-'>
-        <p></p>
+      {salaAtual === "23-25" && <div className='sala' id='23-25'>
+        <p>This building, once a seedy tavern, is now a fighting den where visitors can settle their differences through fisticuffs while spectators place bets on the outcome.</p>
+
+        <p>The owner, Schiropts, won the Bat's Roost tavern after his bat familiar won a fighting tournament and after bat fights weren't enough to attract the ever diminishing crowds he decided to do gladiator matches. Larvus Peidus, a <a href="https://5e.tools/bestiary.html#goblin%20hexer_xmm">goblin mage</a> is the bookie.</p>
+
+        <p>Most of the fighters are common <a href="https://5e.tools/bestiary.html#gladiator_xmm">gladiators</a>.</p>
+
+        <p>One notable fighter is a haggard man in scarred plate armor. Once an Oath of Devotion paladin of an adventuring party, this man was forced to commit atrocities just to survive—for he's just another victim of Halaster's Game. Having broken his sacred oath, the <a href="https://5e.tools/bestiary.html#blackguard_mpmm">blackguard</a> abandoned his old name for a new one: "Sheathe," for his only task left on this earth is to die to the blade of a worthy challenger. He warns any challengers that he will give no quarter and expects none himself.</p>
       </div>}
-      {salaAtual === "23-" && <div className='sala' id='23-'>
-        <p></p>
+      {salaAtual === "23-26" && <div className='sala' id='23-'>
+        <p>This two-story festhall shut down after the Spellplague and never reopened its doors. The Zhentarim now use it as a hideout.</p>
+
+        <p>Bosskyn Gorrb, a blind tiefling <a href="https://5e.tools/bestiary.html#spy_xmm">spy</a>, leads the Zhentarim in Skullport and uses flying snakes to deliver messages to his underlings. If one or more characters are members of the Zhentarim and can prove it, Bosskyn offers to help them in one or both of the following ways:</p>
+
+        <ul>
+          <li>He allows the party to use the festhall as a sanctuary and a resting place for as long as they need it.</li>
+          <li>He uses one of his flying snakes to deliver a message to anyone in Waterdeep on the party's behalf.</li>
+        </ul>
+
+        <p>If the characters have helped the Zhentarim before or are openly opposing Xanathar's Guild, he will tell them about the Fourteenth skull. He doesn't know about the cave but if asked says that the kuo-toa probably know it, as they know these waters well.</p>
       </div>}
-      {salaAtual === "23-" && <div className='sala' id='23-'>
-        <p></p>
+      {salaAtual === "23-27" && <div className='sala' id='23-27'>
+        <p>There's not much need for an expert forger in Skullport these days, but that doesn't concern the owner of the Poisoned Quill, Tasselgryn Velldarn, who makes money from visitors needing to leave Skullport in a hurry.</p>
+
+        <p>"Tas" is an elderly <a href="https://5e.tools/bestiary.html#archmage_xmm">archmage</a>. Her secret is that she and Halaster are friends. The Mad Mage visits her about once a month for tea, and she catches him up on the latest news and gossip. When they are together, Halaster and Tasselgryn act like an old married couple.</p>
+
+        <p>If the characters come seeking an escape from Skullport, Tasselgryn offers to cast the teleportation circle spell but demands payment of 50 gp per party member up front. She can send the characters to the inactive portal in area 37 of level 1 (the pit Halleth was in) if they don't have a teleportation circle address of their own.</p>
+
+        <p>Halaster has placed enchantments on Tasselgryn's shop that enable her (and her alone) to cast teleportation circle spells within its confines, ignoring the restriction that Undermountain places on such magic (see "Alterations to Magic").</p>
+
+        <p>She can also provide the following services:</p>
+
+        <ul>
+          <li><a href="https://5e.tools/spells.html#identify_xphb">Identify.</a> For 10 gp, Tas will cast identify on a magical item the adventurers provide. She's inscribed glyph of warding containing a spell of remove curse upon a stone tablet she keeps at her side whenever she performs this service. If the item is cursed, she charges an additional 100 gp to the adventurers—a clause she negotiates before ever touching the object.</li>
+          <li><a href="https://5e.tools/spells.html#mind%20blank_xphb">Mind Blank.</a> For 150 gp, Tas casts mind blank on a character so as to "protect them from the Mad Mage's prying eyes." </li>
+          <li><a href="https://5e.tools/spells.html#sending_xphb">Sending.</a> For 5 gp, Tas can cast sending to contact a business acquaintance of hers in Waterdeep that will draft a letter addressed to whichever character the adventurers name, provided they have the right contact details. Alternatively, for 25 gp, Tas provides a spell scroll of sending the adventurers can use. She always has 2d4 + 2 scrolls available, as it's her most popular product. Unbeknownst to customers, Tas casts detect thoughts whenever she goes into the back to retrieve one of the scrolls so as to glean insight into the character's message. Tas often provides this information to Halaster when he visits.</li>
+        </ul>
+
+        <p>If the adventurers come here on a later date, they find that Halaster is enjoying his monthly visit with Tas and she hardly tolerates his antics. So, unless something dire occurs, the Mad Mage holds back on any pranks or violence; he won't, however, tolerate anything that upsets or threatens Tas.</p>
+
+        <p>While roleplaying the Mad Mage in this moment, dial back on the crazy. He doesn't threaten the adventurers at all, but instead congratulates them for making it this far and wishes them luck. If asked for assistance or information, he remarks that that would be "cheating."</p>
+
+        <p>The true point of this event is to demonstrate that, somewhere, somehow, Halaster is still human despite having lived for millennia, despite being lost in the throes of madness. That there could be a rhyme to his reason. That he still has attachments.</p>
       </div>}
-      {salaAtual === "23-" && <div className='sala' id='23-'>
-        <p></p>
+      {salaAtual === "23-28" && <div className='sala' id='23-28'>
+        <p>This single-story building contains the workshop of Xanathar's shield dwarf trapsmith and engineer, <a href="https://forgottenrealms.fandom.com/wiki/Thorvin_Twinbeard">Thorvin Twinbeard</a>. He's rarely here, however, since Xanathar keeps him busy. (For more information on Thorvin, see Waterdeep: Dragon Heist.)</p>
       </div>}
-      {salaAtual === "23-" && <div className='sala' id='23-'>
-        <p></p>
+      {salaAtual === "23-29" && <div className='sala' id='23-29'>
+        <p>Darum and Duram Ghaz, a pair of shield dwarf brothers, sell junk salvaged from the River Sargauth. There is a 50 percent chance that the shop is closed and the brothers are away on a salvage mission.</p>
+
+        <p>COLOCAR MAIS ALGO INTERESSANTE</p>
+      </div>}
+      {salaAtual === "23-30" && <div className='sala' id='23-30'>
+        <p>Anderian Dusk, an old human with a long white beard, sells lanterns. The light in Anderian's eyes has gone out, as time has slowly crushed his hopes or dreams. Around his neck he wears a hag eye pendant given to him by the sea hags of the Sargauth River (see area 10c on level 3). The hags pay him to wear it so they can spy on folk passing through Skullport.</p>
+
+        <p>Anderian knows his family has been in skullport for a very long time, what he doesn't know is that his family is descendant from the Netherese that originally settled here, making him the last netherese descendant in the town.</p>
+
+        <p>If the characters need oil for their lanterns, Anderian directs them to the Overflowing Urn (area 33).</p>
+      </div>}
+      {salaAtual === "23-31" && <div className='sala' id='23-31'>
+        <p><a href="https://forgottenrealms.fandom.com/wiki/Dalagor">Dalagor</a> was an evil warrior who surrounded himself with necromancers and undead. He and his minions were destroyed or driven out during the Spellplague, leaving behind a bleak, three-story stone mansion that the Harpers have seized and turned into a hideout.</p>
+
+        <p>Felrax, a dragonborn <a href="https://5e.tools/bestiary.html#mage_xmm">mage</a> with copper-colored scales, watches over the mansion. A light cantrip cast on his staff allows Felrax to see in the dark interior. If the adventurers break into the stone mansion while Felrax is present, the dragonborn mage casts <a href="https://5e.tools/spells.html#greater%20invisibility_xphb">greater invisibility</a> on himself and silently gauges the intruders. If he concludes that they pose no threat or can be trusted, he speaks to them until it's opportune to dismiss the spell.</p>
+
+        <p>If one or more characters are Harpers, Felrax offers to help them in one or both of the following ways:</p>
+
+        <ul>
+          <li>He allows the party to use the mansion as a sanctuary and a resting place for as long as they need it.</li>
+          <li>If the characters need to leave Skullport in a hurry, he tells them that Tasselgryn Velldarn (area 27) has access to a teleportation circle and charges 50 gp per person for its use.</li>
+        </ul>
       </div>}
     </div >
   );
