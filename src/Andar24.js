@@ -30,7 +30,7 @@ export const Mapa24 = {
       id: "24-36",
       name: "Tanor'thal Refuge",
       shape: "circle",
-      coords: [71,893,78]
+      coords: [1571,884,71]
     }
   ]
 }
@@ -114,7 +114,6 @@ export function Salas24({ salaAtual }) {
         <p><strong>Abdomen.</strong> The entrance to the refuge, the abdomen is the largest chamber. It's ovoid in shape, 50 feet in length and 30 feet wide at its widest point. Once an audience chamber, it's now choked by webs and spider eggs.</p>
 
         <p><strong>Treasure.</strong> The drow were sure to clear everything out before they fled Skullport, but a few trinkets were left behind. In each room, underneath cobwebs, 1d4 silvered emblems bearing House Tanor'thal's spidery symbol (25 gp) can be found. Additionally, some victims have common magic items (roll for them)</p>
-
       </div>}
     </div >
   );
