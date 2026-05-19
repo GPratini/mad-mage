@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/mad-mage/static/css/main.524d1fc6.css",
-    "main.js": "/mad-mage/static/js/main.d0d53ad6.js",
+    "main.js": "/mad-mage/static/js/main.e0e5cde2.js",
     "static/js/787.51009ae9.chunk.js": "/mad-mage/static/js/787.51009ae9.chunk.js",
     "static/media/Mr Eaves Small Caps.otf": "/mad-mage/static/media/Mr Eaves Small Caps.a450887c4c7311f843ba.otf",
     "static/media/Bookinsanity.otf": "/mad-mage/static/media/Bookinsanity.641fa108a09b97e89eba.otf",
     "static/media/Nodesto Caps Condensed.otf": "/mad-mage/static/media/Nodesto Caps Condensed.9aa71abb91cd1f57360c.otf",
     "index.html": "/mad-mage/index.html",
     "main.524d1fc6.css.map": "/mad-mage/static/css/main.524d1fc6.css.map",
-    "main.d0d53ad6.js.map": "/mad-mage/static/js/main.d0d53ad6.js.map",
+    "main.e0e5cde2.js.map": "/mad-mage/static/js/main.e0e5cde2.js.map",
     "787.51009ae9.chunk.js.map": "/mad-mage/static/js/787.51009ae9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.524d1fc6.css",
-    "static/js/main.d0d53ad6.js"
+    "static/js/main.e0e5cde2.js"
   ]
 }
