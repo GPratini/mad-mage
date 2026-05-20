@@ -1,5 +1,4 @@
-import React from 'react';
-import { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
 import './index.css';
@@ -38,15 +37,63 @@ const Mapper = (props) => {
   let [nomeSala, setNomeSala] = useState(null);
   let [andarAtivo, setAndarAtivo] = useState(1);
   let viewPortWidth = window.innerWidth;
-  const [alturaTextArea, setAlturaTextArea] = useState(null);
+  const textareaRef = useRef(null);
   const [notas, setNotas] = useState("");
   const mapas = [Mapa1, Mapa2, Mapa3, Mapa4, Mapa5, Mapa6, Mapa7, Mapa8, Mapa9, Mapa10, Mapa11, Mapa12, Mapa13, Mapa14, Mapa15, Mapa16, Mapa17, Mapa18, Mapa19, Mapa20, Mapa21, Mapa22, Mapa23, Mapa24, Mapa25, Mapa26];
+  const STORAGE_KEY = 'mad-mage-notes';
+  const STORAGE_VERSION = 1;
+
+  function loadNotesStorage() {
+    const raw = localStorage.getItem(STORAGE_KEY);
+    if (!raw) {
+      return { version: STORAGE_VERSION, notes: {} };
+    }
+
+    try {
+      const parsed = JSON.parse(raw);
+      if (parsed && parsed.version === STORAGE_VERSION && typeof parsed.notes === 'object') {
+        return parsed;
+      }
+    } catch {
+      // ignore malformed storage
+    }
+
+    return { version: STORAGE_VERSION, notes: {} };
+  }
+
+  function saveNotesStorage(data) {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+  }
+
+  function getNote(areaId) {
+    const storage = loadNotesStorage();
+    if (storage.notes[areaId] !== undefined) {
+      return storage.notes[areaId];
+    }
+
+    const oldValue = localStorage.getItem(areaId);
+    if (oldValue !== null) {
+      storage.notes[areaId] = oldValue;
+      saveNotesStorage(storage);
+      localStorage.removeItem(areaId);
+      return oldValue;
+    }
+
+    return "";
+  }
+
+  function saveNote(areaId, text) {
+    const storage = loadNotesStorage();
+    storage.notes[areaId] = text;
+    saveNotesStorage(storage);
+  }
+
   document.title = mapas[andarAtivo - 1].name + ' | Dungeon of the Mad Mage';
 
   function TextAreaHandler(e) {
-    setAlturaTextArea(e.target.scrollHeight);
-    setNotas(e.target.value);
-    localStorage.setItem(salaAtiva, e.target.value);
+    const value = e.target.value;
+    setNotas(value);
+    saveNote(salaAtiva, value);
   }
 
   function clickedElevador(a) {
@@ -55,9 +102,11 @@ const Mapper = (props) => {
     setNomeSala(null);
   }
 
-  /* const load = () => {
-    setMsg("Interact with the image!");
-  }; */
+  useEffect(() => {
+    if (!textareaRef.current) return;
+    textareaRef.current.style.height = 'auto';
+    textareaRef.current.style.height = `${textareaRef.current.scrollHeight}px`;
+  }, [notas, salaAtiva]);
 
   const clickArea = (area) => {
     if (area.name === "upperSkullport") {
@@ -69,7 +118,7 @@ const Mapper = (props) => {
     } else {
       setSalaAtiva(area.id);
       setNomeSala(area.name);
-      setNotas(localStorage.getItem(area.id));
+      setNotas(getNote(area.id));
     }
   };
 
@@ -160,12 +209,14 @@ const Mapper = (props) => {
         {andarAtivo === 25 && <Salas25 salaAtual={salaAtiva} />}
         {andarAtivo === 26 && <Salas26 salaAtual={salaAtiva} />}
 
-        {salaAtiva && <textarea style={{ height: alturaTextArea - 4 }} value={notas} onChange={e => TextAreaHandler(e)} />}
-        {salaAtiva && <button onClick={() => localStorage.clear()}>Clear all notes</button>}
+        {salaAtiva && <textarea ref={textareaRef} value={notas} onChange={TextAreaHandler} />}
+        
       </div>
     </div>
   );
 };
+
+// Botão de limpar storage {salaAtiva && <button onClick={() => localStorage.clear()}>Clear all notes</button>}
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

@@ -231,7 +231,7 @@ export const Mapa2 = {
     },
     {
       id: "2-13g",
-      name: "Strike it Rich",
+      name: "Talona's Temple?",
       shape: "poly",
       coords: [930, 1473, 930, 1286, 1142, 1289, 1142, 1324, 1119, 1342, 1109, 1364, 1119, 1392, 1132, 1414, 1141, 1438, 1139, 1471]
     },
@@ -839,26 +839,13 @@ export function Salas2({ salaAtual }) {
         <p>Two <a href="https://5e.tools/bestiary.html#flail%20snail_mpmm" target="blank">flail snails</a> live here, eating the leftover ore on the walls as well as any creature they can catch.</p>
       </div>}
       {salaAtual === "2-13g" && <div className='sala' id='2-13g'>
-        <p>The characters hear sounds of battle as they traverse the hall leading to this 10-foot-high room, which has partially collapsed and contains the following:</p>
+        <p>A <a href="https://5e.tools/bestiary.html#tlacatecolo_jttrc" target="blank">Tlacatecolo</a> resides here trying to create a temple to <a href="https://forgottenrealms.fandom.com/wiki/Talona" target="blank">Talona</a>. It was summoned by Kalabash long ago and escaped.</p>
 
-        <p><strong>Light.</strong> The room is lit by a single lantern resting in the middle of the floor.<br></br>
+        <p>It has created the start of a temple using mine cart parts and chunks of ore and rock but as a demon it is a terrible builder, much more of a destroyer.</p>
 
-          <strong>Equipment.</strong> Mine carts about the room contain glittering heaps of copper ore.<br></br>
-
-          <strong>Battle.</strong> A wounded warrior named Rex the Hammer (LE male Illuskan human <a href="https://5e.tools/bestiary.html#champion_mpmm">champion</a> with 22 hit points remaining; see appendix A) has been backed into the southeast corner by a vicious <a href="https://5e.tools/bestiary.html#mezzoloth_xmm">mezzoloth</a> and two <a href="https://5e.tools/bestiary.html#nothic_xmm">nothics</a>. Three dead nothics (killed by Rex) lie on the floor near them.</p>
-
-        <p>The mezzoloth was summoned and bound to Undermountain by Halaster. Its task is to prevent intruders from looting the dungeon. It uses telepathy to command the nothics, which serve it out of fear.</p>
-        <p><strong>Rex the Hammer.</strong>
-
-          Rex was the founder and leader of the evil adventuring party known as the Fine Fellows of Daggerford. Despite hearing rumors about the dangers of Undermountain, Rex assumed (based on the success of Durnan and other capable explorers) that the Fine Fellows would run roughshod over the monsters dwelling within. Boy, was he wrong. Like most villainous groups, the Fine Fellows lacked cohesion. Fed up with his companions' bickering, Rex struck off on his own. He was searching this room for loot when the mezzoloth and the nothics came in behind him, cutting off his escape.</p>
-
-        <p>If Halleth the revenant (see level 1, area 37) is present, he tries to kill Rex, ignoring the other creatures.</p>
-
-        <p>If the characters come to his rescue, Rex expresses his gratitude before quaffing the healing potion in his backpack (see "Treasure" below). On the surface, he seems to be amiable, confident, and eager to discover Undermountain's secrets. He's happy to join the party for an equal share of any loot found. Once he's back at full health (or close to it), though, Rex sheds his civil veneer and tries to bully the characters into following his orders, berating and threatening anyone who defies him. The bullying gets worse until Rex is forcibly ousted or the party dissolves.</p>
-
-        <p><strong>Treasure.</strong> Rex's backpack lies next to one of the mine carts. It contains a silvered shortsword, a 30-foot-long coil of hempen rope, 2 days of rations, a flask of oil, a pouch containing 13 gp, and a potion of healing. The oil lantern in the middle of the room belongs to Rex as well.<br></br>
-
-          The mine carts contain over a thousand chunks of copper ore, each weighing 10 pounds and worth 1 gp. The carts are so old that their axles are bent and rusted, rendering them inoperable.</p>
+        <p>It can feel Lolth's influence in the form of the drow in many levels and Baphomet's in the form of the cultists in level 12. Aside from that, it doesn't have any information about undermountain.</p>
+          
+        <p>If the characters are not immediately hostile, the  if the Tlacatecolo tries to convince them to help build the temple and become the founding members. In return, they will get Talona's “blessing”, it will help them whenever they call and they all may gain greater power later.</p>
       </div>}
       {salaAtual === "2-14a" && <div className='sala' id='2-14a'>
         <p>These two chambers have been claimed by a drow mage named Rizzeryl, his summoned quasit minion, and eight wererats. At least for now, Rizzeryl and the wererats are staunch allies.</p>
@@ -928,11 +915,17 @@ export function Salas2({ salaAtual }) {
 
         <p><strong>Cold.</strong> The room is bitterly cold.<br></br>
 
-          <strong>Glowing Rune.</strong> The walls rise 10 feet, then angle inward, forming a pyramidal roof with a 40-foot-high apex. Inscribed on the sloped north wall is a 10-foot-tall Dwarvish rune that glows with a faint blue light.</p>
+          <strong>Glowing Rune.</strong> The walls rise 10 feet, then angle inward, forming a pyramidal roof with a 40-foot-high apex. Inscribed on the sloped north wall is a 10-foot-tall Dwarvish rune that glows with a faint blue light.<br></br>
+          
+          <strong>Frozen adventurer.</strong> A small man in leather armor lies frozen in the middle of the room, looking toward the rune.</p>
 
         <p>Any character who understands Dwarvish knows that the oversized rune on the north wall is an ancient symbol meaning "cold." A detect magic spell reveals an aura of conjuration magic around the rune. The rune's magic lowers the room's temperature to 0 degrees Fahrenheit.</p>
 
-        <p>When a spell is cast in this room (including one cast from a magic item), the giant rune flashes and deals 36 (8d8) cold damage to all creatures in the room. Once the rune has released this cold energy, it can't do so again for 1 hour.</p>
+        <p>When a spell is cast in this room (including one cast from a magic item) or when someone speaks the word "cold" in dwarvish, the giant rune flashes and deals 36 (8d8) cold damage to all creatures in the room. Once the rune has released this cold energy, it can't do so again for 1 hour.</p>
+
+        <p>An adventuring party called the Fine Fellows of Daggerford descended into Undermountain one tenday ago. One of its members, a thief named Kelim the Weasel (NE human <a href="https://5e.tools/bestiary.html#spy_xmm" target="blank">spy</a>), wandered off, exploring this room, spoke what was written on the wall and ended up frozen to death.</p>
+
+        <p>Kelim also carries an explorer's pack and a pouch containing 5 pp, 24 gp, and 4 sp, both frozen with him.</p>
       </div>}
       {salaAtual === "2-19a" && <div className='sala' id='2-19a'>
         <p>Giant spiders make their home here despite countless attempts by adventurers to get rid of them.</p>
@@ -1080,6 +1073,19 @@ export function Salas2({ salaAtual }) {
           <strong>Skeletal Displays.</strong> Standing in the hall are the skeletons of four Huge dragons, their bones held together by wire and cement. A few pieces of each dragon have broken off and fallen to the floor. A fifth dragon skeleton in a similar state of disrepair fills an alcove to the south.</p>
 
         <p>This hall contains the posed, inanimate skeletons of five adult dragons—one each of red, blue, black, green, and white. The red dragon skeleton occupies the southern alcove, while the others are lined up in the main hall. The skeletons are harmless.</p>
+
+        <p>In the middle of the room is an oil lantern and a tall and strong human (LE male Illuskan human <a href="https://5e.tools/bestiary.html#champion_mpmm">champion</a>; see appendix A) taking down the skeletons making budles for transport.</p>
+
+        <p><strong>Rex the Hammer.</strong> 
+
+          Rex was the founder and leader of the evil adventuring party known as the Fine Fellows of Daggerford. Despite hearing rumors about the dangers of Undermountain, Rex assumed (based on the success of Durnan and other capable explorers) that the Fine Fellows would run roughshod over the monsters dwelling within. Boy, was he wrong. Like most villainous groups, the Fine Fellows lacked cohesion. Fed up with his companions' bickering, Rex struck off on his own.</p>
+
+        <p>If Halleth the revenant (see level 1, area 37) is present, he tries to kill Rex.</p>
+
+        <p>Initialy amiable, Rex sheds his civil veneer as soon as the characters don't seem hostile and tries to bully the characters into following his orders, berating and threatening anyone who defies him. He wants to take the bone back to the surface and sell them for a profit, taking a larger share since "he found it and had the idea". If the characters go with his plan he later decides he is the leader and wants to go back down to take more treasures. The bullying gets worse until Rex is forcibly ousted or the party dissolves.</p>
+
+        <p><strong>Treasure.</strong> Rex's backpack contains a silvered shortsword, a 30-foot-long coil of hempen rope, 2 days of rations, a flask of oil, a pouch containing 13 gp, and a potion of healing. The oil lantern in the middle of the room belongs to Rex as well.<br></br></p>
+        
       </div>}
       {salaAtual === "2-24" && <div className='sala' id='2-24'>
         <p>What was once a dwarven shrine to <a href="https://www.thievesguild.cc/gods/god?godid=149">Dumathoin</a> is now the tomb of a long-dead adventurer.</p>

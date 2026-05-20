@@ -1068,17 +1068,9 @@ export function Salas1({ salaAtual }) {
         <p><strong>Debris.</strong> The floor is littered with small rocks and pebbles, broken statuary, and jagged chunks of masonry big enough to crush a man's skull.</p>
       </div>}
       {salaAtual === "1-36b" && <div className='sala' id='1-36b'>
-        <p><strong>Gricks.</strong> Five <a href="https://5e.tools/bestiary.html#grick_xmm" target="blank">gricks</a> lurk in the diagonal hallway to the south. They attack all who enter.<br></br>
+        <p><strong>Gricks.</strong> Five <a href="https://5e.tools/bestiary.html#grick_xmm" target="blank">gricks</a> lurk in the diagonal hallway to the south. They attack all who enter.</p>
 
-          <strong>Trapped Adventurer.</strong> The sound of weeping comes from behind a closed door in the west wall (leading to a 10-foot-square closet). A small hole has been drilled through the middle of the door.</p>
-
-        <p>An adventuring party called the Fine Fellows of Daggerford descended into Undermountain one tenday ago. One of its members, a thief named Kelim the Weasel (NE human <a href="https://5e.tools/bestiary.html#spy_xmm" target="blank">spy</a>), wandered off, snuck into this corner of the dungeon, found a spellbook left behind by a long-dead adventurer, and inadvertently aroused the gricks. With his escape route cut off, Kelim sealed himself in the closet to avoid being eaten. He drilled a small hole in the door so that he could peer out of it and get some fresher air. He wants to sneak out while the gricks are asleep or distracted, but he's too scared to leave. He has been without food or water for two days.</p>
-
-        <p>If rescued, Kelim gives his saviors a stolen spellbook as a token of gratitude. Beyond that, he's an unreliable coward who will betray anyone to save his own skin. He doesn't know where the rest of his adventuring party is (see level 2) and doesn't seem to care.</p>
-
-        <p><strong>Treasure.</strong> The stolen spellbook contains the following spells: blight, burning hands, comprehend languages, darkvision, dispel magic, false life, feign death, gust of wind, invisibility, lightning bolt, and sleep.</p>
-
-        <p>Kelim also carries an explorer's pack (with its perishable supplies mostly depleted) and a pouch containing 5 pp, 24 gp, and 4 sp.</p>
+        <p><strong>Treasure.</strong> In the middle of the room is a dagger that seems to reflect a place that isn't this rrom. In the reflection the characters can see the underside of very well sculpted wash basins. This is the reflection of area 3 in level 6, where the other twin dagger is. If both daggers are within 30 feet of one another, a successful attack with one makes the other act as a +1 weapon until the end of the turn.</p>
       </div>}
       {salaAtual === "1-36c" && <div className='sala' id='1-36c'>
         <p><strong>Sleeping Grick.</strong> A <a href="https://5e.tools/bestiary.html#grick%20alpha_xmm" target="blank">grick alpha</a> is coiled up in the southernmost section of the room and appears to be asleep. The creature recently gorged itself on goblins and is not hungry. If the characters stay at least 10 feet away from it and cause it no harm, it ignores them.<br></br>

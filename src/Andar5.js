@@ -44,42 +44,18 @@ export function Salas5({ salaAtual }) {
       {salaAtual === "5-1" && <div className='sala' id='5-1'>
         <h2>Skill Challenge</h2>
 
-        <p>If the party arrives to Wyllowwood by means of a boat,
-          you can kick off this level with a skill challenge. The river
-          hits nasty rough water before spilling out into this idyllic
-          wonderland. The party must navigate the rapids.</p>
+        <p>If the party arrives to Wyllowwood by means of a boat, you can kick off this level with a skill challenge. The river hits nasty rough water before spilling out into this idyllic wonderland. The party must navigate the rapids.</p>
 
-        <p><strong>Rules.</strong> The party must succeed on four ability checks
-          before failing three. Once a character has used a specific
-          skill, they personally cannot use it again for the remainder
-          of the challenge. This is to spur creativity and not let the
-          rogue repeatedly use his +9 Acrobatics skill. Players
-          suggest skills to overcome obstacles, such as Perception
-          to sight the stalactites ahead before hitting them. At your
-          discretion, a player can only use a skill they're proficient
-          with, so as to lend importance to it.</p>
+        <p><strong>Rules.</strong> The party must succeed on four ability checks before failing three. Once a character has used a specific skill, they personally cannot use it again for the remainder of the challenge. This is to spur creativity and not let the rogue repeatedly use his +9 Acrobatics skill. Players suggest skills to overcome obstacles, such as Perception to sight the stalactites ahead before hitting them. At your discretion, a player can only use a skill they're proficient with, so as to lend importance to it.</p>
 
-        <p><strong>Conducting the Challenge.</strong> The challenge is divided
-          into obstacles, described below. Roll initiative simply to
-          have an order for the players to go in. They don't need to
-          adhere to the order, but it does help critical thinking. On
-          their turn, each player suggests a skill or tool to overcome
-          an obstacle. Not coming up with a solution carries no
-          penalty, unless no one can, in which case the party
-          accumulates one failure—the price of indecision.</p>
+        <p><strong>Conducting the Challenge.</strong> The challenge is divided into obstacles, described below. Roll initiative simply to have an order for the players to go in. They don't need to adhere to the order, but it does help critical thinking. On their turn, each player suggests a skill or tool to overcome an obstacle. Not coming up with a solution carries no penalty, unless no one can, in which case the party accumulates one failure—the price of indecision.</p>
 
-        <p><strong>Failure.</strong> Failing an ability check merely means the
-          vessel takes damage. On the third failure, the vessel is
-          destroyed, and the characters are overcome by the rapids.
-          Eventually, they spill out into Wyllowwood after
-          suffering 4d8 bludgeoning damage.</p>
+        <p><strong>Failure.</strong> Failing an ability check merely means the vessel takes damage. On the third failure, the vessel is destroyed, and the characters are overcome by the rapids.
+          Eventually, they spill out into Wyllowwood after suffering 4d8 bludgeoning damage.</p>
 
         <h2>Suggested Obstacles</h2>
 
-        <p>The following obstacles have been written for you;
-          replace them as you see fit. The DCs of all ability checks
-          are left up to you, though they ought to be high
-          considering the party is 8th level.</p>
+        <p>The following obstacles have been written for you; replace them as you see fit. The DCs of all ability checks are left up to you, though they ought to be high considering the party is 8th level.</p>
         <ol>
           <li><strong>Rough Water.</strong> The party encounters rough waters that soon swell into rapids. Suggestions include Vehicle (water) checks, Survival or Athletics to navigate the channel without crashing into rocks.</li>
           <li><strong>Grimlocks!</strong> A band of <a href="https://5e.tools/bestiary.html#grimlock_xmm">grimlocks</a> are spearing fishing along the river. Suggestions include Stealth to remain undetected (as grimlocks are blind); Performance to sound like a predator; Perception to detect them long before they can; or Sleight of Hand to toss an object so as to distract them. On a failure, the grimlocks hurl four spears (+5 to hit, 1d6 + 3 piercing damage) at the characters or their boat.</li>
