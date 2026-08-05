@@ -947,7 +947,7 @@ export function Salas2({ salaAtual }) {
         <p>Any tugging or burning of the webs in this area alerts the <a href="https://5e.tools/bestiary.html#giant%20spider_xmm" target="blank">giant spiders</a> in area 19d, which creep down the hallway to investigate.</p>
       </div>}
       {salaAtual === "2-19d" && <div className='sala' id='2-19d'>
-        <p>Five <a href="https://5e.tools/bestiary.html#giant%20spider_xmm" target="blank">giant spiders</a> lair here and attack all intruders.</p>
+        <p>Five <a href="https://5e.tools/bestiary.html#giant%20spider_xmm">giant spiders</a> and two <a href="https://5e.tools/bestiary.html#ettercap_xmm">Ettercaps</a> lair here and attack all intruders.</p>
       </div>}
       {salaAtual === "2-19e" && <div className='sala' id='2-19e'>
         <p>Dense webbing fills this room as well (see area 19c for rules). Suspended within the webs are six cocoons. They contain the desiccated corpses of five goblins and a nothic, as well as swarms of insects (spiders) that bursts forth and attacks if the cocoon is torn open.</p>
@@ -1002,6 +1002,8 @@ export function Salas2({ salaAtual }) {
         <p>One of the bugbears is rummaging through a collection of dwarven morningstars and casting undesirable ones onto the floor. The other two are fighting over a rusty shield embossed with a symbol resembling a stylized goblin skull.</p>
 
         <p>The room contains dozens of suits of plate armor, scale armor, and chain mail, as well as scores of shields, battleaxes, morningstars, warhammers, war picks, and javelins. Most of these items have deteriorated to the point of being useless and irreparable. Rust has eaten away the metal, and dampness has rotted the leather straps and bindings on the shields and armor.</p>
+
+        <p>A warhammer stands out from the rest as specially well-crafted. Each side of its head has a different tint to the stone, one side is slighty blue and the other slightly red. It is a magical weapon that, when attuned to, allows its wielder to activate a strong magnetic force on the warhammer's head. When fighting any creatures that are made of metal or wearing metal armor, the warhammer acts as a +1 weapon. If activated to its strongest setting, only a DC 30 Strength (Athletics) check can separate it from metal it is struck to.</p>
       </div>}
       {salaAtual === "2-21" && <div className='sala' id='2-21'>
         <p><strong>Light.</strong> The arched, 30-foot-high ceiling of this long hall is studded with glowing red crystals that cast dim light throughout the hall. (Crystals pried out of their fixtures go dark.)<br></br>
@@ -1035,7 +1037,7 @@ export function Salas2({ salaAtual }) {
 
         <p>Four of the vats are empty, a fifth is full of ancient ale but its spigot has been bent and cannot be opened. The southwest vat contains a <a href="https://5e.tools/bestiary.html#rum%20lord_tob2" target="blank">rum lord</a> snoring loudly and still wet with ale. The sealed vat must be opened from the top by passing a DC 16 Strength check or using magic such as knock.</p>
 
-        <p>The rum lord in not hostile and will summon rum gremlins and try to escape if attacked. He really wants to open the sealed vat and will offer information in exchange for help doing so. He knows about the pit traps in area 22d and is sure there is a secret door there but hasn't found the way to open it. He can also offer his "blessing" which lasts 24 hours and makes a character resistant to poison damage and have advantage on saving throws against poison.</p>
+        <p>The rum lord in not hostile and will summon <a href="https://5e.tools/bestiary.html#rum%20gremlin_tob">rum gremlins</a> and try to escape if attacked. He really wants to open the sealed vat and will offer information in exchange for help doing so. He knows about the pit traps in area 22d and is sure there is a secret door there but hasn't found the way to open it. He can also offer his "blessing" which lasts 24 hours and makes a character resistant to poison damage and have advantage on saving throws against poison.</p>
 
         <p><strong>Barrels.</strong> There are thirty empty barrels, all made of iron-banded zurkhwood (a woody fungus). Most are in such poor condition that they can no longer hold liquids without leaking, but clever characters can use them to safely avoid the pit traps in area 22d.</p>
       </div>}
@@ -1058,12 +1060,12 @@ export function Salas2({ salaAtual }) {
         <p><strong>Treasure.</strong> Each barrel contains 40 gallons of dwarven ale that has been magically preserved for centuries. Removing a barrel's lid or breaking the barrel causes its glyph to fade away, ending the preservation spell on that barrel. If the ale is marketed as "Melairkyn Ale," "Undermountain Ale," or something similar, characters can sell a barrel of it for 40 gp in Waterdeep. A full barrel of ale weighs approximately 400 pounds.</p>
       </div>}
       {salaAtual === "2-22f" && <div className='sala' id='2-22f'>
-        <p>This room is identical to area 22e, except the pyramid of barrels has collapsed. Most of the barrels lie smashed on the floor. Fifty-nine of them remain intact, their ale preserved. Another three appear to be intact but are, in fact, three <a href="https://5e.tools/bestiary.html#mimic_xmm" target="blank">mimics</a> placed here by Halaster. The three hide within 10 feet of one another and fight together.</p>
+        <p>This room is identical to area 22e, except the pyramid of barrels has collapsed. Most of the barrels lie smashed on the floor. Fifty-nine of them remain intact, their ale preserved. Another three appear to be intact but are, in fact, three <a href="https://5e.tools/bestiary.html#mimic_xmm">mimics</a> placed here by Halaster. The three hide within 10 feet of one another and fight together.</p>
       </div>}
       {salaAtual === "2-23a" && <div className='sala' id='2-23a'>
         <p><strong>Light.</strong> The walls climb 15 feet, then angle inward to create a peaked, 30-foot-high ceiling. The sloped upper walls have red glowing crystals set into them. These crystals fill the hall with dim light. (Crystals pried out of their fixtures go dark.)<br></br>
 
-          <strong>Carvings.</strong> The lower walls were once lined with <a target="blank" href="dwarven_carvings.png">carvings</a> depicting dwarves pushing mine carts toward the west.<br></br>
+          <strong>Carvings.</strong> The lower walls were once lined with <a href="dwarven_carvings.png">carvings</a> depicting dwarves pushing mine carts toward the west.<br></br>
 
           <strong>Dwarf-Guarded Doors.</strong> A 20-foot-tall double door stands closed at the west end of the hall. Carved into the walls flanking the double door stand armored dwarves, their stony beards flowing out of great helms that conceal their facial features.</p>
       </div>}
@@ -1099,7 +1101,7 @@ export function Salas2({ salaAtual }) {
       {salaAtual === "2-25a" && <div className='sala' id='2-25a'>
         <p><strong>Caryatids.</strong> Supporting the 20-foot-high ceiling are four pillars of white marble, each shaped in the likeness of a stoic female elf in flowing robes with a flowering branch clutched to her chest. The caryatids face inward.<br></br>
 
-          <strong>Modron.</strong> Circling the caryatids counterclockwise is a <a href="https://5e.tools/bestiary.html#quadrone_xmm" target="blank">quadrone</a> with its bow at the ready. It makes clicking and clacking noises as it walks.<br></br>
+          <strong>Modron.</strong> Circling the caryatids counterclockwise is a <a href="https://5e.tools/bestiary.html#quadrone_xmm" >quadrone</a> with its bow at the ready. It makes clicking and clacking noises as it walks.<br></br>
 
           <strong>Bas-Reliefs.</strong> The walls are carved with bas-reliefs of unicorns and bare-branched trees.</p>
 

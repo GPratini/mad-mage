@@ -36,33 +36,45 @@ const Mapper = (props) => {
   let [salaAtiva, setSalaAtiva] = useState(null);
   let [nomeSala, setNomeSala] = useState(null);
   let [andarAtivo, setAndarAtivo] = useState(1);
-  let viewPortWidth = window.innerWidth;
+  const [viewPortWidth, setViewPortWidth] = useState(0);
   const textareaRef = useRef(null);
   const [notas, setNotas] = useState("");
+  const [pageLoaded, setPageLoaded] = useState(false);
   const mapas = [Mapa1, Mapa2, Mapa3, Mapa4, Mapa5, Mapa6, Mapa7, Mapa8, Mapa9, Mapa10, Mapa11, Mapa12, Mapa13, Mapa14, Mapa15, Mapa16, Mapa17, Mapa18, Mapa19, Mapa20, Mapa21, Mapa22, Mapa23, Mapa24, Mapa25, Mapa26];
   const STORAGE_KEY = 'mad-mage-notes';
   const STORAGE_VERSION = 1;
 
   function loadNotesStorage() {
-    const raw = localStorage.getItem(STORAGE_KEY);
-    if (!raw) {
-      return { version: STORAGE_VERSION, notes: {} };
-    }
-
     try {
+      if (typeof localStorage === 'undefined') {
+        return { version: STORAGE_VERSION, notes: {} };
+      }
+
+      const raw = localStorage.getItem(STORAGE_KEY);
+      if (!raw) {
+        return { version: STORAGE_VERSION, notes: {} };
+      }
+
       const parsed = JSON.parse(raw);
       if (parsed && parsed.version === STORAGE_VERSION && typeof parsed.notes === 'object') {
         return parsed;
       }
-    } catch {
-      // ignore malformed storage
+    } catch (error) {
+      console.warn('Failed to load notes from storage', error);
     }
 
     return { version: STORAGE_VERSION, notes: {} };
   }
 
   function saveNotesStorage(data) {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+    try {
+      if (typeof localStorage === 'undefined') {
+        return;
+      }
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+    } catch (error) {
+      console.warn('Failed to save notes to storage', error);
+    }
   }
 
   function getNote(areaId) {
@@ -71,12 +83,18 @@ const Mapper = (props) => {
       return storage.notes[areaId];
     }
 
-    const oldValue = localStorage.getItem(areaId);
-    if (oldValue !== null) {
-      storage.notes[areaId] = oldValue;
-      saveNotesStorage(storage);
-      localStorage.removeItem(areaId);
-      return oldValue;
+    try {
+      if (typeof localStorage !== 'undefined') {
+        const oldValue = localStorage.getItem(areaId);
+        if (oldValue !== null) {
+          storage.notes[areaId] = oldValue;
+          saveNotesStorage(storage);
+          localStorage.removeItem(areaId);
+          return oldValue;
+        }
+      }
+    } catch (error) {
+      console.warn('Failed to migrate old note from localStorage', error);
     }
 
     return "";
@@ -102,11 +120,28 @@ const Mapper = (props) => {
     setNomeSala(null);
   }
 
+  // Wait for page to fully load before calculating layout dimensions
   useEffect(() => {
-    if (!textareaRef.current) return;
+    const handleLoad = () => {
+      setViewPortWidth(window.innerWidth);
+      setPageLoaded(true);
+    };
+
+    if (document.readyState === 'complete') {
+      handleLoad();
+    } else {
+      window.addEventListener('load', handleLoad);
+      return () => window.removeEventListener('load', handleLoad);
+    }
+  }, []);
+
+  // Only adjust textarea height after page is fully loaded
+  useEffect(() => {
+    if (!pageLoaded || !textareaRef.current) return;
+    
     textareaRef.current.style.height = 'auto';
     textareaRef.current.style.height = `${textareaRef.current.scrollHeight}px`;
-  }, [notas, salaAtiva]);
+  }, [notas, salaAtiva, pageLoaded]);
 
   const clickArea = (area) => {
     if (area.name === "upperSkullport") {

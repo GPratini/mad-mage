@@ -12,13 +12,13 @@ export const Mapa5 = {
       id: "5-2a",
       name: "Riverside Forest",
       shape: "circle",
-      coords: [1108,976,106]
+      coords: [1108, 976, 106]
     },
     {
       id: "5-2a",
       name: "Riverside Forest",
       shape: "circle",
-      coords: [1268,1377,112]
+      coords: [1268, 1377, 112]
     },
     {
       id: "",
@@ -123,29 +123,53 @@ export function Salas5({ salaAtual }) {
       {salaAtual === "5-2e" && <div className='sala' id='5-2e'>
         <p></p>
       </div>}
-      {salaAtual === "5-" && <div className='sala' id='5-'>
+      {salaAtual === "5-3a" && <div className='sala' id='5-3a'>
         <p></p>
       </div>}
-      {salaAtual === "5-" && <div className='sala' id='5-'>
+      {salaAtual === "5-3b" && <div className='sala' id='5-3b'>
         <p></p>
       </div>}
-      {salaAtual === "5-" && <div className='sala' id='5-'>
+      {salaAtual === "5-4a" && <div className='sala' id='5-4a'>
         <p></p>
       </div>}
-      {salaAtual === "5-" && <div className='sala' id='5-'>
+      {salaAtual === "5-4b" && <div className='sala' id='5-4b'>
         <p></p>
       </div>}
-      {salaAtual === "5-" && <div className='sala' id='5-'>
+      {salaAtual === "5-4d" && <div className='sala' id='5-4d'>
         <p></p>
       </div>}
-      {salaAtual === "5-" && <div className='sala' id='5-'>
+      {salaAtual === "5-4e" && <div className='sala' id='5-4e'>
         <p></p>
       </div>}
-      {salaAtual === "5-" && <div className='sala' id='5-'>
+      {salaAtual === "5-5" && <div className='sala' id='5-5'>
         <p></p>
       </div>}
-      {salaAtual === "5-" && <div className='sala' id='5-'>
-        <p></p>
+      {salaAtual === "5-6a" && <div className='sala' id='5-6a'>
+        <p>Wyllow's Tower is carved to look like a squat stone tree with twisted, stony boughs protruding from the walls. Thirteen <a href="https://5e.tools/bestiary.html#giant%20bat_xmm">giant bats</a> hang from these crumbling limbs like ornaments, their wings wrapped tightly around their bodies. If the characters try to climb the tower, the bats attack. The bats otherwise fight only in self-defense or at Wyllow's command.</p>
+
+        <p>At the base of the tower, on the south side, is a 12-foot-high arched double door made of carved stone. A rope hanging next to the door rings a bell when tugged. If the characters knock or ring before entering, Wyllow's usher, <a href="https://5e.tools/bestiary.html#awakened%20tree_xmm">Halastree</a>, greets them and leads them to area 6a. Halastree is an awakened tree whose trunk Wyllow carved in the likeness of Halaster. It speaks Common and is exceptionally polite. If the characters enter the tower unannounced, they get as far as area 6a before encountering someone.</p>
+
+        <p>All rooms in the tower are brightly lit by beams of magical light, which emanate from the ceiling and shine down on the dusty, tiled floor.</p>
+
+        <p>All doors in the tower are made of carved stone. All ceilings are 10 feet high, except in area 6a.</p>
+
+        <p>
+          <strong>Detritus.</strong> Dead leaves and twigs cover the dusty floor.<br></br>
+
+          <strong>Balcony.</strong> The room has a vaulted ceiling 20 feet high. Stone pillars carved to look like trees support a 10-foot-high stone balcony that runs along the north, east, and south walls. The trees' stone branches serve as the balcony's railings.<br></br>
+
+          <strong>Archdruid and Friends.</strong> <a href="https://5e.tools/bestiary.html#wyllow_wdmm">Wyllow</a> is here, attended by Crissann, her <a href="https://5e.tools/bestiary.html#displacer%20beast_xmm">displacer beast</a> companion, and <a href="https://5e.tools/bestiary.html#awakened%20tree_xmm">Halastree</a>, her awakened tree usher. Wyllow wears a gold key on a string around her neck (see "Treasure" below). The archdruid sits meditating in a throne of yellow crystal that stands in the western alcove. The throne has eyes carved into it.<br></br>
+
+          <strong>Secret Doors.</strong> Flanking the crystal throne are two secret doors. One swings open into area 6b, the other into area 6c.
+        </p>
+
+        <p>Wyllow's crystal throne was carved by dwarves and given to her by her late husband, Yinark. A detect magic spell reveals an aura of divination magic around it. A creature seated on the throne has advantage on Wisdom (Insight) checks.</p>
+
+        <p>For information on Wyllow, see the "Wyllow" section at the start of the chapter. The archdruid is friendly toward visitors who have done nothing to anger her. The displacer beast and the awakened tree fight to the death to defend her.</p>
+
+        <p>Characters who do nothing to antagonize Wyllow can secure safe passage through her demesne, though she warns them to steer clear of the goblin werebats and show the green dragon the respect it's due. She knows the locations of Wyllowwood's gates and how to activate them (see areas 3b, 6i, and area 9), as well as the passages leading down to levels 6 and 7. If the characters slay the cloakers north of her tower (in area 4), Wyllow will share this information with them.</p>
+
+        <p><strong>Treasure.</strong> The gold key in Wyllow's possession unlocks the chest in area 6g. The key is worth 25 gp.</p>
       </div>}
       {salaAtual === "5-" && <div className='sala' id='5-'>
         <p></p>
