@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/mad-mage/static/css/main.c1c02ae4.css",
-    "main.js": "/mad-mage/static/js/main.11762f73.js",
+    "main.css": "/mad-mage/static/css/main.e8d4c5a9.css",
+    "main.js": "/mad-mage/static/js/main.b1bcfc3b.js",
     "static/js/684.f5c421cb.chunk.js": "/mad-mage/static/js/684.f5c421cb.chunk.js",
     "static/js/914.e25a7ba2.chunk.js": "/mad-mage/static/js/914.e25a7ba2.chunk.js",
     "static/js/888.86b35814.chunk.js": "/mad-mage/static/js/888.86b35814.chunk.js",
@@ -24,17 +24,17 @@
     "static/js/249.f5d1c15e.chunk.js": "/mad-mage/static/js/249.f5d1c15e.chunk.js",
     "static/js/39.274098d8.chunk.js": "/mad-mage/static/js/39.274098d8.chunk.js",
     "static/js/315.ec59e201.chunk.js": "/mad-mage/static/js/315.ec59e201.chunk.js",
-    "static/js/934.54c4bea6.chunk.js": "/mad-mage/static/js/934.54c4bea6.chunk.js",
-    "static/js/373.17dfabd1.chunk.js": "/mad-mage/static/js/373.17dfabd1.chunk.js",
-    "static/js/757.ddf3196c.chunk.js": "/mad-mage/static/js/757.ddf3196c.chunk.js",
+    "static/js/934.c86b1410.chunk.js": "/mad-mage/static/js/934.c86b1410.chunk.js",
+    "static/js/373.1874611c.chunk.js": "/mad-mage/static/js/373.1874611c.chunk.js",
+    "static/js/757.d83c3d00.chunk.js": "/mad-mage/static/js/757.d83c3d00.chunk.js",
     "static/js/389.b118c1a4.chunk.js": "/mad-mage/static/js/389.b118c1a4.chunk.js",
     "static/js/787.51009ae9.chunk.js": "/mad-mage/static/js/787.51009ae9.chunk.js",
     "static/media/Mr Eaves Small Caps.otf": "/mad-mage/static/media/Mr Eaves Small Caps.a450887c4c7311f843ba.otf",
     "static/media/Bookinsanity.otf": "/mad-mage/static/media/Bookinsanity.641fa108a09b97e89eba.otf",
     "static/media/Nodesto Caps Condensed.otf": "/mad-mage/static/media/Nodesto Caps Condensed.9aa71abb91cd1f57360c.otf",
     "index.html": "/mad-mage/index.html",
-    "main.c1c02ae4.css.map": "/mad-mage/static/css/main.c1c02ae4.css.map",
-    "main.11762f73.js.map": "/mad-mage/static/js/main.11762f73.js.map",
+    "main.e8d4c5a9.css.map": "/mad-mage/static/css/main.e8d4c5a9.css.map",
+    "main.b1bcfc3b.js.map": "/mad-mage/static/js/main.b1bcfc3b.js.map",
     "684.f5c421cb.chunk.js.map": "/mad-mage/static/js/684.f5c421cb.chunk.js.map",
     "914.e25a7ba2.chunk.js.map": "/mad-mage/static/js/914.e25a7ba2.chunk.js.map",
     "888.86b35814.chunk.js.map": "/mad-mage/static/js/888.86b35814.chunk.js.map",
@@ -57,14 +57,14 @@
     "249.f5d1c15e.chunk.js.map": "/mad-mage/static/js/249.f5d1c15e.chunk.js.map",
     "39.274098d8.chunk.js.map": "/mad-mage/static/js/39.274098d8.chunk.js.map",
     "315.ec59e201.chunk.js.map": "/mad-mage/static/js/315.ec59e201.chunk.js.map",
-    "934.54c4bea6.chunk.js.map": "/mad-mage/static/js/934.54c4bea6.chunk.js.map",
-    "373.17dfabd1.chunk.js.map": "/mad-mage/static/js/373.17dfabd1.chunk.js.map",
-    "757.ddf3196c.chunk.js.map": "/mad-mage/static/js/757.ddf3196c.chunk.js.map",
+    "934.c86b1410.chunk.js.map": "/mad-mage/static/js/934.c86b1410.chunk.js.map",
+    "373.1874611c.chunk.js.map": "/mad-mage/static/js/373.1874611c.chunk.js.map",
+    "757.d83c3d00.chunk.js.map": "/mad-mage/static/js/757.d83c3d00.chunk.js.map",
     "389.b118c1a4.chunk.js.map": "/mad-mage/static/js/389.b118c1a4.chunk.js.map",
     "787.51009ae9.chunk.js.map": "/mad-mage/static/js/787.51009ae9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c1c02ae4.css",
-    "static/js/main.11762f73.js"
+    "static/css/main.e8d4c5a9.css",
+    "static/js/main.b1bcfc3b.js"
   ]
 }
