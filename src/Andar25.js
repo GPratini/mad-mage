@@ -83,7 +83,7 @@ export function Salas25({ salaAtual }) {
       {salaAtual == null && <div className='sala'>
         <h2>Skull Island Weaponry</h2>
         
-        <p>The fortress on Skull Island bristles with ballistae and flame cannons. Before one of these weapons can be fired, it must be loaded and aimed. It takes one action to load a weapon, one action to aim it, and one action to fire it. Each ballista or flame cannon is a Large object with AC 15, 50 hit points, and immunity to poison and psychic damage.</p>
+        <p>The fortress has 20-foot-high outer walls interrupted at irregular intervals by 30-foot-high (two-story) towers topped with battlements, ballistae, and flame cannons. Before one of these weapons can be fired, it must be loaded and aimed. It takes one action to load a weapon, one action to aim it, and one action to fire it. Each ballista or flame cannon is a Large object with AC 15, 50 hit points, and immunity to poison and psychic damage.</p>
 
         <p><strong>Ballista.</strong> Ranged Weapon Attack: +6 to hit, range 120/480 ft., one target. Hit: 16 (3d10) piercing damage. <br></br>
 
@@ -125,6 +125,12 @@ export function Salas25({ salaAtual }) {
           <p>The column merges with the cavern roof, narrows in the middle (where a stalactite and a stalagmite converged eons ago), and has abundant ledges and handholds on the outside. The outer door is made of iron and squeals loudly when opened, alerting the spire's occupants.</p>
 
           <p>Carved into the column is a seven-story prison composed of windowless torture chambers connected to one another by rough-hewn stairways. Worshipers of Loviatar used this tower to imprison and torture slaves. The walls throughout are lined with manacles; rusted shackles lie strewn amid torture racks, spiked cages, and other contraptions that have fallen into disrepair.</p>
+
+          <p>Once this wretched tower teemed with prisoners, but now only a few languish in these cells, for Sundeth prefers an executioner to feeding extra mouths. Those imprisoned here have either vexed the half-ogre or are kept alive by orders of his superiors. Some even predate his command and he saw no reason to free them. The two notable prisoners are:</p>
+
+          <p><strong>Dalanoth.</strong> This high elf marine's merchant vessel lays at the bottom of the River Sargauth, his crewmates butchered long ago by a gang that would later be known as the Mandible. Dalanoth has languished in his cell for well over a century. The Tower of the Seven Woes has changed many hands since then and no occupant ever saw fit to release the elf. Sundeth is curious as to how solitary confinement will take its toll on such a long-lived being, even if the half-ogre knows it will move on from Skullport long before the experiment is finished.</p>
+
+          <p><strong>Jesheen.</strong> An accused Zhentarim spy, Jesheen has been tortured relentlessly for weeks. With the lack of other enemies, Sundeth is certain Jesheen is the spy he's long awaited, one that will lead him to "all the others." To no fault of her own, the woman has been driven into giving false confessions, leading to the arrests of several other citizens.</p>
       </div>}
       {salaAtual === "25-10a" && <div className='sala' id='25-10a'>
         <p>East of the island fortress, an old dock protrudes from the mouth of a damp cave like a wooden tongue.</p>

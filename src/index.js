@@ -1,46 +1,62 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { lazy, Suspense, useEffect, useRef, useState } from 'react';
 import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
 import './index.css';
 import ImageMapper from 'react-img-mapper';
-import { Salas1, Mapa1 } from './Andar1';
-import { Salas2, Mapa2 } from './Andar2';
-import { Salas3, Mapa3 } from './Andar3';
-import { Salas4, Mapa4 } from './Andar4';
-import { Salas5, Mapa5 } from './Andar5';
-import { Salas6, Mapa6 } from './Andar6';
-import { Salas7, Mapa7 } from './Andar7';
-import { Salas8, Mapa8 } from './Andar8';
-import { Salas9, Mapa9 } from './Andar9';
-import { Salas10, Mapa10 } from './Andar10';
-import { Salas11, Mapa11 } from './Andar11';
-import { Salas12, Mapa12 } from './Andar12';
-import { Salas13, Mapa13 } from './Andar13';
-import { Salas14, Mapa14 } from './Andar14';
-import { Salas15, Mapa15 } from './Andar15';
-import { Salas16, Mapa16 } from './Andar16';
-import { Salas17, Mapa17 } from './Andar17';
-import { Salas18, Mapa18 } from './Andar18';
-import { Salas19, Mapa19 } from './Andar19';
-import { Salas20, Mapa20 } from './Andar20';
-import { Salas21, Mapa21 } from './Andar21';
-import { Salas22, Mapa22 } from './Andar22';
-import { Salas23, Mapa23 } from './Andar23';
-import { Salas24, Mapa24 } from './Andar24';
-import { Salas25, Mapa25 } from './Andar25';
-import { Salas26, Mapa26 } from './Andar26';
+
+const floorLoaders = [
+  () => import('./Andar1'),
+  () => import('./Andar2'),
+  () => import('./Andar3'),
+  () => import('./Andar4'),
+  () => import('./Andar5'),
+  () => import('./Andar6'),
+  () => import('./Andar7'),
+  () => import('./Andar8'),
+  () => import('./Andar9'),
+  () => import('./Andar10'),
+  () => import('./Andar11'),
+  () => import('./Andar12'),
+  () => import('./Andar13'),
+  () => import('./Andar14'),
+  () => import('./Andar15'),
+  () => import('./Andar16'),
+  () => import('./Andar17'),
+  () => import('./Andar18'),
+  () => import('./Andar19'),
+  () => import('./Andar20'),
+  () => import('./Andar21'),
+  () => import('./Andar22'),
+  () => import('./Andar23'),
+  () => import('./Andar24'),
+  () => import('./Andar25'),
+  () => import('./Andar26')
+];
+
+const floorRegistry = floorLoaders.map((load, index) => {
+  const floorNumber = index + 1;
+
+  return {
+    floorNumber,
+    load,
+    Room: lazy(() => load().then((module) => ({
+      default: module[`Salas${floorNumber}`]
+    })))
+  };
+});
 
 const Mapper = (props) => {
   /* const [msg, setMsg] = useState(null);
   const [moveMsg, setMoveMsg] = useState(null); */
-  let [salaAtiva, setSalaAtiva] = useState(null);
-  let [nomeSala, setNomeSala] = useState(null);
-  let [andarAtivo, setAndarAtivo] = useState(1);
-  const [viewPortWidth, setViewPortWidth] = useState(0);
+  const [salaAtiva, setSalaAtiva] = useState(null);
+  const [nomeSala, setNomeSala] = useState(null);
+  const [andarAtivo, setAndarAtivo] = useState(1);
+  const [mapaAtivo, setMapaAtivo] = useState(null);
+  const [mapWidth, setMapWidth] = useState(0);
   const textareaRef = useRef(null);
+  const mapContainerRef = useRef(null);
   const [notas, setNotas] = useState("");
-  const [pageLoaded, setPageLoaded] = useState(false);
-  const mapas = [Mapa1, Mapa2, Mapa3, Mapa4, Mapa5, Mapa6, Mapa7, Mapa8, Mapa9, Mapa10, Mapa11, Mapa12, Mapa13, Mapa14, Mapa15, Mapa16, Mapa17, Mapa18, Mapa19, Mapa20, Mapa21, Mapa22, Mapa23, Mapa24, Mapa25, Mapa26];
+  const activeFloor = floorRegistry[andarAtivo - 1];
   const STORAGE_KEY = 'mad-mage-notes';
   const STORAGE_VERSION = 1;
 
@@ -106,8 +122,6 @@ const Mapper = (props) => {
     saveNotesStorage(storage);
   }
 
-  document.title = mapas[andarAtivo - 1].name + ' | Dungeon of the Mad Mage';
-
   function TextAreaHandler(e) {
     const value = e.target.value;
     setNotas(value);
@@ -116,32 +130,52 @@ const Mapper = (props) => {
 
   function clickedElevador(a) {
     setAndarAtivo(a);
+    setMapaAtivo(null);
     setSalaAtiva(null);
     setNomeSala(null);
   }
 
-  // Wait for page to fully load before calculating layout dimensions
   useEffect(() => {
-    const handleLoad = () => {
-      setViewPortWidth(window.innerWidth);
-      setPageLoaded(true);
-    };
+    let cancelled = false;
 
-    if (document.readyState === 'complete') {
-      handleLoad();
-    } else {
-      window.addEventListener('load', handleLoad);
-      return () => window.removeEventListener('load', handleLoad);
+    activeFloor.load().then(({ [`Mapa${andarAtivo}`]: mapa }) => {
+      if (!cancelled) {
+        setMapaAtivo(mapa);
+      }
+    });
+
+    return () => {
+      cancelled = true;
+    };
+  }, [activeFloor, andarAtivo]);
+
+  useEffect(() => {
+    const element = mapContainerRef.current;
+    if (!element) return undefined;
+
+    const updateMapWidth = () => setMapWidth(element.clientWidth);
+    updateMapWidth();
+
+    if (typeof ResizeObserver === 'undefined') {
+      window.addEventListener('resize', updateMapWidth);
+      return () => window.removeEventListener('resize', updateMapWidth);
     }
+
+    const observer = new ResizeObserver(updateMapWidth);
+    observer.observe(element);
+    return () => observer.disconnect();
   }, []);
 
-  // Only adjust textarea height after page is fully loaded
   useEffect(() => {
-    if (!pageLoaded || !textareaRef.current) return;
+    document.title = `${mapaAtivo?.name || `Floor ${andarAtivo}`} | Dungeon of the Mad Mage`;
+  }, [andarAtivo, mapaAtivo]);
+
+  useEffect(() => {
+    if (!textareaRef.current) return;
     
     textareaRef.current.style.height = 'auto';
     textareaRef.current.style.height = `${textareaRef.current.scrollHeight}px`;
-  }, [notas, salaAtiva, pageLoaded]);
+  }, [notas, salaAtiva]);
 
   const clickArea = (area) => {
     if (area.name === "upperSkullport") {
@@ -173,7 +207,7 @@ const Mapper = (props) => {
   
   return (
     <div>
-      <div id="mapa">
+      <div id="mapa" ref={mapContainerRef}>
         <button className='elevador' id='botaoSk' onClick={() => clickedElevador(23)}>💀</button>
         <button className='elevador' id='botao1' onClick={() => clickedElevador(1)}>1º</button>
         <button className='elevador' id='botao2' onClick={() => clickedElevador(2)}>2º</button>
@@ -197,12 +231,9 @@ const Mapper = (props) => {
         <button className='elevador' id='botao20' onClick={() => clickedElevador(20)}>20º</button>
         <button className='elevador' id='botao21' onClick={() => clickedElevador(21)}>21º</button>
         <button className='elevador' id='botao22' onClick={() => clickedElevador(22)}>22º</button>
-        <ImageMapper
-          src={mapas[andarAtivo - 1].src}
-          map={{
-            name: mapas[andarAtivo - 1].name,
-            areas: mapas[andarAtivo - 1].areas
-          }}
+        {mapaAtivo && mapWidth > 0 && <ImageMapper
+          src={mapaAtivo.src}
+          map={mapaAtivo}
           /* onLoad={() => load()}
           onImageClick={(evt) => clickedOutside(evt)}
           onImageMouseMove={(evt) => moveOnImage(evt)}
@@ -211,38 +242,16 @@ const Mapper = (props) => {
           stayHighlighted={true}
           fillColor='rgba(0, 0, 255, 0.2)'
           responsive={true}
-          parentWidth={(viewPortWidth / 100) * 48}
+          parentWidth={mapWidth}
         />
+        }
       </div>
       <div id="info">
-        <h1>{nomeSala ? nomeSala : mapas[andarAtivo - 1].name + " | Dungeon of the Mad Mage"}</h1>
+        <h1>{nomeSala || mapaAtivo?.name || 'Loading floor...'}</h1>
 
-        {andarAtivo === 1 && <Salas1 salaAtual={salaAtiva} />}
-        {andarAtivo === 2 && <Salas2 salaAtual={salaAtiva} />}
-        {andarAtivo === 3 && <Salas3 salaAtual={salaAtiva} />}
-        {andarAtivo === 4 && <Salas4 salaAtual={salaAtiva} />}
-        {andarAtivo === 5 && <Salas5 salaAtual={salaAtiva} />}
-        {andarAtivo === 6 && <Salas6 salaAtual={salaAtiva} />}
-        {andarAtivo === 7 && <Salas7 salaAtual={salaAtiva} />}
-        {andarAtivo === 8 && <Salas8 salaAtual={salaAtiva} />}
-        {andarAtivo === 9 && <Salas9 salaAtual={salaAtiva} />}
-        {andarAtivo === 10 && <Salas10 salaAtual={salaAtiva} />}
-        {andarAtivo === 11 && <Salas11 salaAtual={salaAtiva} />}
-        {andarAtivo === 12 && <Salas12 salaAtual={salaAtiva} />}
-        {andarAtivo === 13 && <Salas13 salaAtual={salaAtiva} />}
-        {andarAtivo === 14 && <Salas14 salaAtual={salaAtiva} />}
-        {andarAtivo === 15 && <Salas15 salaAtual={salaAtiva} />}
-        {andarAtivo === 16 && <Salas16 salaAtual={salaAtiva} />}
-        {andarAtivo === 17 && <Salas17 salaAtual={salaAtiva} />}
-        {andarAtivo === 18 && <Salas18 salaAtual={salaAtiva} />}
-        {andarAtivo === 19 && <Salas19 salaAtual={salaAtiva} />}
-        {andarAtivo === 20 && <Salas20 salaAtual={salaAtiva} />}
-        {andarAtivo === 21 && <Salas21 salaAtual={salaAtiva} />}
-        {andarAtivo === 22 && <Salas22 salaAtual={salaAtiva} />}
-        {andarAtivo === 23 && <Salas23 salaAtual={salaAtiva} />}
-        {andarAtivo === 24 && <Salas24 salaAtual={salaAtiva} />}
-        {andarAtivo === 25 && <Salas25 salaAtual={salaAtiva} />}
-        {andarAtivo === 26 && <Salas26 salaAtual={salaAtiva} />}
+        <Suspense fallback={<div className="sala">Loading floor notes...</div>}>
+          <activeFloor.Room salaAtual={salaAtiva} />
+        </Suspense>
 
         {salaAtiva && <textarea ref={textareaRef} value={notas} onChange={TextAreaHandler} />}
         

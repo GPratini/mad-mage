@@ -1,11 +1,27 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "Bookinsanity", Georgia, serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #efedeb;
+}
+
+@font-face {
+  font-family: "Bookinsanity";
+  src: url("../fonts/Bookinsanity.otf") format("opentype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Nodesto";
+  src: url("../fonts/Nodesto Caps Condensed.otf") format("opentype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mr Eaves Small Caps";
+  src: url("../fonts/Mr Eaves Small Caps.otf") format("opentype");
+  font-display: swap;
 }
 
 #root {
@@ -47,18 +63,15 @@ textarea {
 
 p , ul , ol {
   font-family: "Bookinsanity";
-	src: url("../fonts/Bookinsanity.otf") format("opentype");
   font-size: 1.1em;
 }
 
 h1 {
   font-family: "Nodesto";
-	src: url("../fonts/Nodesto\ Caps\ Condensed.otf") format("opentype");
 	font-weight: bold;
 }
 
 h2 {
   font-family: "Mr Eaves Small Caps";
-	src: url("../fonts/Mr\ Eaves\ Small\ Caps.otf") format("opentype");
 	font-weight: normal;
 }

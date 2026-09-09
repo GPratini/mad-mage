@@ -685,7 +685,7 @@ export function Salas3({ salaAtual }) {
         <p>The winds are loudest here, stirring the thick webs that fill this cave and evoking ghostly shapes.</p>
       </div>}
       {salaAtual === "3-8b" && <div className='sala' id='3-8b'>
-        <p>A <a href="https://5e.tools/bestiary.html#drider_xmm" target="blank">drider</a> driven mad by the wailing winds covers its ears in a futile attempt to block out the noise. When the characters enter the room, it begins shrieking, "Make it stop!" in Elvish. If the characters cast a silence spell around the drider, it enjoys the respite and allows them to pass through its cave unharmed. Otherwise, it attacks them in a demented rage.</p>
+        <p>A <a href="https://5e.tools/bestiary.html#drider_xmm" target="blank">drider</a> (<a href="https://5e.tools/bestiary.html#drider_mm">ficha alternativa</a>) driven mad by the wailing winds covers its ears in a futile attempt to block out the noise. When the characters enter the room, it begins shrieking, "Make it stop!" in Elvish. If the characters cast a silence spell around the drider, it enjoys the respite and allows them to pass through its cave unharmed. Otherwise, it attacks them in a demented rage.</p>
       </div>}
       {salaAtual === "3-8c" && <div className='sala' id='3-8c'>
         <p>This cave abuts the sluggish River Sargauth and is filled with web curtains that undulate in the howling wind. Behind these curtains, carved into the west wall, is an old pirate rhyme:</p>
@@ -729,7 +729,7 @@ export function Salas3({ salaAtual }) {
         <p>If any of the sea spawn die, the others run to the next room, seeking the hags' protection. The hags treat them like incompetent guard dogs.</p>
       </div>}
       {salaAtual === "3-10c" && <div className='sala' id='3-10c'>
-        <p>This 30-foot-high natural cave smells like brine and seaweed. It is home to a coven of three <a href="https://5e.tools/bestiary.html#sea%20hag_xmm" target="blank">sea hags</a> in league with Halaster Blackcloak. Each hag has a <a href="https://5e.tools/bestiary.html#giant%20crab_xmm" target="blank">giant crab</a> pet that follows her around and obeys her commands. The cave's other features are as follows:</p>
+        <p>This 30-foot-high natural cave smells like brine and seaweed. It is home to a coven of three <a href="https://5e.tools/bestiary.html#sea%20hag_xmm" target="blank">sea hags</a> (<a href="https://5e.tools/bestiary.html#sea%20hag_mm">ficha antiga</a> para misturar) in league with Halaster Blackcloak. Each hag has a <a href="https://5e.tools/bestiary.html#giant%20crab_xmm" target="blank">giant crab</a> pet that follows her around and obeys her commands. The cave's other features are as follows:</p>
 
         <p><strong>Noise.</strong> The sound of splashing geysers (see area 10d) echoes throughout.<br></br>
 
@@ -818,7 +818,7 @@ export function Salas3({ salaAtual }) {
         <p>A medusa lived in these caverns many years ago until adventurers got the better of her. The crumbled statue is all that remains of one of her victims.</p>
       </div>}
       {salaAtual === "3-11b" && <div className='sala' id='3-11b'>
-        <p><strong>Drider Spellcaster.</strong> A <a href="https://5e.tools/bestiary.html#drider_xmm" target="blank">drider</a> lurks in the smaller cave to the north and emerges to confront intruders who enter by way of area 11a. This drider has the Spellcasting trait described in the sidebar that appears in the "Drider" entry in the Monster Manual.<br></br>
+        <p><strong>Drider Spellcaster.</strong> A <a href="https://5e.tools/bestiary.html#drider_xmm" target="blank">drider</a> (<a href="https://5e.tools/bestiary.html#drider_mm">ficha alternativa</a>) lurks in the smaller cave to the north and emerges to confront intruders who enter by way of area 11a. This drider has the Spellcasting trait described in the sidebar that appears in the "Drider" entry in the Monster Manual.<br></br>
 
           <strong>Statues.</strong> The main cave has a 40-foot-high ceiling filled with the petrified victims of a medusa that once lived here. The drider has wrapped these statues in thick webs, creating an eerie forest of gray cocoons. Strung between these cocoons are web strands that create difficult terrain.</p>
 

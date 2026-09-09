@@ -256,7 +256,7 @@ export function Salas23({ salaAtual }) {
         <p>The shops that surround this abandoned slave market appear vacant. Further investigation reveals that one shop (area 12) is open for business.</p>
       </div>}
       {salaAtual === "23-12" && <div className='sala' id='23-12'>
-        <p>A <a href="https://5e.tools/bestiary.html#green%20hag_xmm">green hag</a> named Olive Stillwater sells human <a href="https://5e.tools/bestiary.html#zombie_xmm">zombies</a> out of this dilapidated shop. She appears as an old woman covered with snails and barnacles.</p>
+        <p>A <a href="https://5e.tools/bestiary.html#green%20hag_xmm">green hag</a> (<a href="https://5e.tools/bestiary.html#green%20hag_mm">ficha antiga</a> alternativa para misturar) named Olive Stillwater sells human <a href="https://5e.tools/bestiary.html#zombie_xmm">zombies</a> out of this dilapidated shop. She appears as an old woman covered with snails and barnacles.</p>
 
         <p>Olive keeps a dozen human zombies in her cramped shop. "They're great for setting off traps!" she says with a chuckle. As payment for each zombie, she demands a tiny vial of the buyer's blood and three hairs plucked from the buyer's head. She owns a pair of rusty iron shears that can be used to draw blood and cut hair. This payment will be used to cast Scrying on the characters from time to time, curse them if needed and get their bodies to make zombies if they die.</p>
 
@@ -284,8 +284,6 @@ export function Salas23({ salaAtual }) {
           <li><strong>Oleo da amargura (800 gp):</strong> Quando aplicado a uma armadura, qualquer criatura que te engula deve fazer um savamento de constituição DC 15 no final de cada turno ou imediatamente te cuspir. Qualquer criatura que te ataque com a boca deve fazer o mesmo salvamento em mordidas subsequentes ou ter desvantagem no ataque.</li>
           <li><strong>Capacete para-raios (1300gp):</strong> O usuario tem resistencia a dano de raio mas qualquer efeito eletrico numa area de 60 ft. em volta sempre vai nele independente do alvo original.</li>
           <li><strong>Orbe do mago de batalha (2000gp)</strong> Requer sintonia (atunement) por uma pessoa com pontos de magia. O usuario pode atacar com essa arma usando sua habilidade de magia, ao invés de força. Dano contundente 1d6, alcance, leve. Como uma ação, o usuario pode gastar um ponto de magia para lançar o orbe que irá fazer um ataque contra qualquer alvo a vista mais um ataque para cada nivel do ponto usado. Esse ataque especial causa +1d6 de dano de força a cada alvo que acerta.</li>
-          <li></li>
-          <li></li>
         </ul>
       </div>}
       {salaAtual === "23-14" && <div className='sala' id='23-14'>
