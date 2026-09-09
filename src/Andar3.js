@@ -298,67 +298,67 @@ export const Mapa3 = {
     },
     {
       id: "3-20a",
-      name: "Drow Town - Kitchen",
+      name: "Drow Town: Kitchen",
       shape: "poly",
       coords: [951,1204,953,1124,973,1121,973,1088,1027,1093,1027,1140,1043,1147,1043,1164,1065,1166,1065,1183,991,1185,991,1202]
     },
     {
       id: "3-20b",
-      name: "Drow Town - T'rissa's Quarters",
+      name: "Drow Town: T'rissa's Quarters",
       shape: "poly",
       coords: [1051,1066,1122,1068,1122,1088,1163,1091,1165,1124,1071,1124,1071,1105,1052,1102]
     },
     {
       id: "3-20c",
-      name: "Drow Town - Quaggoth Den",
+      name: "Drow Town: Quaggoth Den",
       shape: "poly",
       coords: [1013,1249,1011,1207,1105,1210,1106,1227,1127,1230,1127,1248,1065,1248,1062,1263,1030,1265,1030,1249]
     },
     {
       id: "3-20d",
-      name: "Drow Town - Demon Mirror",
+      name: "Drow Town: Demon Mirror",
       shape: "poly",
       coords: [1090,1182,1124,1181,1124,1203,1147,1203,1147,1148,1090,1143]
     },
     {
       id: "3-20e",
-      name: "Drow Town - Treasure Downstream",
+      name: "Drow Town: Treasure Downstream",
       shape: "rect",
       coords: [1166,1210,1206,1284]
     },
     {
       id: "3-20f",
-      name: "Drow Town - Unoccupied Quarters",
+      name: "Drow Town: Unoccupied Quarters",
       shape: "poly",
       coords: [1024,1344,1108,1343,1107,1306,1145,1305,1145,1270,1092,1270,1091,1289,1031,1292,1031,1302,994,1305,994,1327,1024,1327]
     },
     {
       id: "3-20g",
-      name: "Drow Town - Drow Barracks",
+      name: "Drow Town: Drow Barracks",
       shape: "poly",
       coords: [932,1348,931,1400,951,1400,953,1462,989,1462,989,1367,970,1365,970,1348]
     },
     {
       id: "3-20h",
-      name: "Drow Town - Old Dining Hall",
+      name: "Drow Town: Old Dining Hall",
       shape: "poly",
       coords: [891,1264,894,1192,929,1187,929,1223,989,1228,992,1288,953,1288,951,1264]
     },
     {
       id: "3-20i",
-      name: "Drow Town - Water Closet",
+      name: "Drow Town: Water Closet",
       shape: "rect",
       coords: [893,1129,929,1163]
     },
     {
       id: "3-20j",
-      name: "Drow Town - Troglodyte Mob",
+      name: "Drow Town: Troglodyte Mob",
       shape: "poly",
       coords: [869,1119,869,1182,830,1186,831,1223,787,1227,787,1206,766,1189,785,1157,812,1121,830,1125,842,1114,844,1095,863,1100]
     },
     {
       id: "3-20k",
-      name: "Drow Town - Gathering of Grimlocks",
+      name: "Drow Town: Gathering of Grimlocks",
       shape: "poly",
       coords: [874,1209,871,1304,850,1304,849,1342,796,1345,787,1329,793,1306,803,1298,785,1268,787,1246,849,1247,849,1209]
     },
@@ -370,7 +370,7 @@ export const Mapa3 = {
     },
     {
       id: "3-21a",
-      name: "Azrok's Hold - Krek",
+      name: "Azrok's Hold: Krek",
       shape: "circle",
       coords: [588,1429,25]
     },

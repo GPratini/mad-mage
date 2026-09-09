@@ -1,6 +1,6 @@
 export const Mapa25 = {
   src: "skullport3.png",
-  name: "Skullport - Skull Island",
+  name: "Skullport: Skull Island",
   areas: [
     {
       id: "25-1",
@@ -64,13 +64,13 @@ export const Mapa25 = {
     },
     {
       id: "25-10a",
-      name: "Kuo-toa Lair - Old Dock",
+      name: "Kuo-toa Lair: Old Dock",
       shape: "poly",
       coords: [1919,1784,1802,1687,1848,1638,1959,1742]
     },
     {
       id: "25-10b",
-      name: "Kuo-toa Lair - Kuo-toa Cave",
+      name: "Kuo-toa Lair: Kuo-toa Cave",
       shape: "circle",
       coords: [2020,1807,75]
     }

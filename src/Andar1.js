@@ -46,73 +46,73 @@ export const Mapa1 = {
     },
     {
       id: "1-6a",
-      name: "Undertakers' Watch Post - Hall of Three Lords",
+      name: "Undertakers' Watch Post: Hall of Three Lords",
       shape: "poly",
       coords: [609, 937, 609, 702, 687, 705, 688, 782, 713, 782, 713, 937]
     },
     {
       id: "1-6b",
-      name: "Undertakers' Watch Post - Rigged Secret Door",
+      name: "Undertakers' Watch Post: Rigged Secret Door",
       shape: "poly",
       coords: [813, 939, 764, 939, 765, 885, 792, 888, 789, 915, 813, 915]
     },
     {
       id: "1-6c",
-      name: "Undertakers' Watch Post - Uktarl's Room",
+      name: "Undertakers' Watch Post: Uktarl's Room",
       shape: "rect",
       coords: [534, 706, 583, 781]
     },
     {
       id: "1-6d",
-      name: "Undertakers' Watch Post - Sleeping Quarters",
+      name: "Undertakers' Watch Post: Sleeping Quarters",
       shape: "rect",
       coords: [454, 914, 531, 866]
     },
     {
       id: "1-6e",
-      name: "Undertakers' Watch Post - Latrine",
+      name: "Undertakers' Watch Post: Latrine",
       shape: "poly",
       coords: [429, 786, 426, 834, 349, 835, 349, 760, 373, 760, 373, 809, 403, 811, 401, 783]
     },
     {
       id: "1-7a",
-      name: "Vampire Haven - Hall of Retreat",
+      name: "Vampire Haven: Hall of Retreat",
       shape: "rect",
       coords: [663, 523, 713, 679]
     },
     {
       id: "1-7b",
-      name: "Vampire Haven - Crypt",
+      name: "Vampire Haven: Crypt",
       shape: "rect",
       coords: [713, 654, 765, 731]
     },
     {
       id: "1-8a",
-      name: "Bandit Headquarters - Hall of the Bone Throne",
+      name: "Bandit Headquarters: Hall of the Bone Throne",
       shape: "poly",
       coords: [406, 369, 406, 349, 478, 349, 478, 367, 503, 369, 503, 491, 478, 492, 478, 523, 400, 523, 400, 495, 376, 491, 375, 369]
     },
     {
       id: "1-8b",
-      name: "Bandit Headquarters - Harria's Room",
+      name: "Bandit Headquarters: Harria's Room",
       shape: "rect",
       coords: [271, 498, 324, 448]
     },
     {
       id: "1-8c",
-      name: "Bandit Headquarters - Masters of Disguise",
+      name: "Bandit Headquarters: Masters of Disguise",
       shape: "poly",
       coords: [400, 366, 372, 367, 373, 393, 295, 393, 299, 315, 319, 315, 322, 346, 400, 346]
     },
     {
       id: "1-9a",
-      name: "Plundered Halls - Pillared Way",
+      name: "Plundered Halls: Pillared Way",
       shape: "poly",
       coords: [168, 239, 193, 239, 193, 263, 349, 265, 349, 316, 168, 316]
     },
     {
       id: "1-9b",
-      name: "Plundered Halls - Rotted Corpse",
+      name: "Plundered Halls: Rotted Corpse",
       shape: "rect",
       coords: [244, 185, 349, 237]
     },
@@ -142,19 +142,19 @@ export const Mapa1 = {
     },
     {
       id: "1-14a",
-      name: "Little Box of Horrors - Sloping Tunnel",
+      name: "Little Box of Horrors: Sloping Tunnel",
       shape: "rect",
       coords: [660, 184, 713, 263]
     },
     {
       id: "1-14b",
-      name: "Little Box of Horrors - Heart in a Box",
+      name: "Little Box of Horrors: Heart in a Box",
       shape: "rect",
       coords: [767, 187, 843, 262]
     },
     {
       id: "1-14c",
-      name: "Little Box of Horrors - Secret Room",
+      name: "Little Box of Horrors: Secret Room",
       shape: "rect",
       coords: [843, 210, 870, 184]
     },
@@ -172,13 +172,13 @@ export const Mapa1 = {
     },
     {
       id: "1-17a",
-      name: "Stone Temple Pileup - Foyer",
+      name: "Stone Temple Pileup: Foyer",
       shape: "rect",
       coords: [1002, 679, 1051, 564]
     },
     {
       id: "1-17b",
-      name: "Stone Temple Pileup - Desecrated Temple",
+      name: "Stone Temple Pileup: Desecrated Temple",
       shape: "poly",
       coords: [948, 705, 1103, 708, 1103, 913, 1077, 916, 1077, 940, 974, 941, 974, 918, 946, 916]
     },
@@ -190,19 +190,19 @@ export const Mapa1 = {
     },
     {
       id: "1-19a",
-      name: "Ye Olde Feast Halls - Servants' Feast Hall",
+      name: "Ye Olde Feast Halls: Servants' Feast Hall",
       shape: "rect",
       coords: [1287, 734, 1392, 602]
     },
     {
       id: "1-19b",
-      name: "Ye Olde Feast Halls - Guards' Feast Hall",
+      name: "Ye Olde Feast Halls: Guards' Feast Hall",
       shape: "rect",
       coords: [1261, 809, 1417, 758]
     },
     {
       id: "1-19c",
-      name: "Ye Olde Feast Halls - Nobles' Feast Hall",
+      name: "Ye Olde Feast Halls: Nobles' Feast Hall",
       shape: "poly",
       coords: [1313, 941, 1313, 965, 1235, 967, 1235, 890, 1417, 890, 1417, 965, 1338, 967, 1337, 942]
     },
@@ -220,67 +220,67 @@ export const Mapa1 = {
     },
     {
       id: "1-23a",
-      name: "Worg's Eye Watch Post - Nimraith's Fate",
+      name: "Worg's Eye Watch Post: Nimraith's Fate",
       shape: "rect",
       coords: [247, 1278, 319, 1230]
     },
     {
       id: "1-23b",
-      name: "Worg's Eye Watch Post - Shattered Statue",
+      name: "Worg's Eye Watch Post: Shattered Statue",
       shape: "poly",
       coords: [324, 1332, 324, 1199, 427, 1199, 427, 1278, 378, 1276, 376, 1330]
     },
     {
       id: "1-23c",
-      name: "Worg's Eye Watch Post - Goblin Den",
+      name: "Worg's Eye Watch Post: Goblin Den",
       shape: "rect",
       coords: [244, 1490, 321, 1411]
     },
     {
       id: "1-24a",
-      name: "Halls of Hopelessness - Old Gate",
+      name: "Halls of Hopelessness: Old Gate",
       shape: "rect",
       coords: [165, 1561, 214, 1490]
     },
     {
       id: "1-24b",
-      name: "Halls of Hopelessness - Dead Mage",
+      name: "Halls of Hopelessness: Dead Mage",
       shape: "poly",
       coords: [217, 1617, 217, 1643, 193, 1643, 193, 1564, 296, 1564, 296, 1586, 271, 1584, 271, 1595, 296, 1595, 295, 1620]
     },
     {
       id: "1-25a",
-      name: "Excavation Site - Dead Goblin",
+      name: "Excavation Site: Dead Goblin",
       shape: "poly",
       coords: [427, 1543, 403, 1543, 403, 1488, 454, 1488, 454, 1463, 480, 1463, 478, 1512, 427, 1512]
     },
     {
       id: "1-25b",
-      name: "Excavation Site - Headless Statue",
+      name: "Excavation Site: Headless Statue",
       shape: "rect",
       coords: [454, 1722, 512, 1594]
     },
     {
       id: "1-26a",
-      name: "Clean Tunnels - Hall of Many Candles",
+      name: "Clean Tunnels: Hall of Many Candles",
       shape: "poly",
       coords: [869, 1803, 870, 1852, 660, 1852, 660, 1801, 298, 1800, 298, 1773, 687, 1772, 688, 1826, 844, 1827, 843, 1800]
     },
     {
       id: "1-26b",
-      name: "Clean Tunnels - Empty Closet",
+      name: "Clean Tunnels: Empty Closet",
       shape: "rect",
       coords: [271, 1774, 298, 1747]
     },
     {
       id: "1-26c",
-      name: "Clean Tunnels - Ooze Your Janitor?",
+      name: "Clean Tunnels: Ooze Your Janitor?",
       shape: "poly",
       coords: [298, 2008, 349, 2007, 349, 2035, 268, 2035, 268, 1981, 296, 1981]
     },
     {
       id: "1-26d",
-      name: "Clean Tunnels - Gate to Level 10",
+      name: "Clean Tunnels: Gate to Level 10",
       shape: "rect",
       coords: [843, 1801, 869, 1774]
     },
@@ -292,25 +292,25 @@ export const Mapa1 = {
     },
     {
       id: "1-28a",
-      name: "Grick Snack Watch Post - West Chamber",
+      name: "Grick Snack Watch Post: West Chamber",
       shape: "poly",
       coords: [844, 1487, 844, 1434, 923, 1436, 920, 1385, 972, 1385, 972, 1461, 1023, 1461, 1023, 1485]
     },
     {
       id: "1-28b",
-      name: "Grick Snack Watch Post - Obelisk of the Eye",
+      name: "Grick Snack Watch Post: Obelisk of the Eye",
       shape: "poly",
       coords: [1025, 1538, 1025, 1438, 1002, 1438, 998, 1382, 1026, 1382, 1023, 1356, 1077, 1356, 1077, 1382, 1102, 1381, 1102, 1435, 1077, 1433, 1077, 1538]
     },
     {
       id: "1-28c",
-      name: "Grick Snack Watch Post - East Chamber",
+      name: "Grick Snack Watch Post: East Chamber",
       shape: "rect",
       coords: [1130, 1488, 1181, 1383]
     },
     {
       id: "1-28d",
-      name: "Grick Snack Watch Post - Concealed Spiked Pit",
+      name: "Grick Snack Watch Post: Concealed Spiked Pit",
       shape: "rect",
       coords: [1052, 1592, 1077, 1540]
     },
@@ -322,13 +322,13 @@ export const Mapa1 = {
     },
     {
       id: "1-30a",
-      name: "Mad Elemental - Zigzagging Hall",
+      name: "Mad Elemental: Zigzagging Hall",
       shape: "poly",
       coords: [1182, 1226, 1182, 1200, 1207, 1173, 1266, 1175, 1287, 1196, 1310, 1173, 1366, 1173, 1391, 1198, 1417, 1175, 1472, 1173, 1496, 1196, 1522, 1173, 1545, 1173, 1545, 1204, 1519, 1226, 1471, 1227, 1443, 1201, 1414, 1224, 1364, 1224, 1338, 1203, 1313, 1226, 1259, 1227, 1233, 1201, 1210, 1229]
     },
     {
       id: "1-30b",
-      name: "Mad Elemental - Guard Room",
+      name: "Mad Elemental: Guard Room",
       shape: "rect",
       coords: [1469, 1279, 1546, 1226]
     },
@@ -340,13 +340,13 @@ export const Mapa1 = {
     },
     {
       id: "1-32a",
-      name: "VIP Suite - Empty Bedchamber",
+      name: "VIP Suite: Empty Bedchamber",
       shape: "rect",
       coords: [1286, 1124, 1443, 1045]
     },
     {
       id: "1-32b",
-      name: "VIP Suite - Bathroom",
+      name: "VIP Suite: Bathroom",
       shape: "rect",
       coords: [1207, 1121, 1259, 1070]
     },
@@ -370,19 +370,19 @@ export const Mapa1 = {
     },
     {
       id: "1-36a",
-      name: "Lost Halls - Gricks!",
+      name: "Lost Halls: Gricks!",
       shape: "rect",
       coords: [1287, 1512, 1417, 1486]
     },
     {
       id: "1-36b",
-      name: "Lost Halls - Trapped Fellow",
+      name: "Lost Halls: Trapped Fellow",
       shape: "poly",
       coords: [1546, 1461, 1492, 1461, 1492, 1436, 1577, 1436, 1608, 1459, 1628, 1459, 1656, 1487, 1639, 1518, 1625, 1513, 1539, 1606, 1516, 1603, 1509, 1584, 1579, 1512, 1522, 1510, 1522, 1487, 1546, 1487]
     },
     {
       id: "1-36c",
-      name: "Lost Halls - Upside-Down Throne",
+      name: "Lost Halls: Upside-Down Throne",
       shape: "poly",
       coords: [1417, 1591, 1417, 1642, 1337, 1642, 1335, 1591, 1312, 1591, 1299, 1565, 1330, 1542, 1443, 1541, 1471, 1537, 1468, 1591]
     },

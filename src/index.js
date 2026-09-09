@@ -2,7 +2,7 @@ import React, { lazy, Suspense, useEffect, useRef, useState } from 'react';
 import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
 import './index.css';
-import ImageMapper from 'react-img-mapper';
+import MapSvg from './MapSvg';
 
 const floorLoaders = [
   () => import('./Andar1'),
@@ -46,15 +46,11 @@ const floorRegistry = floorLoaders.map((load, index) => {
 });
 
 const Mapper = (props) => {
-  /* const [msg, setMsg] = useState(null);
-  const [moveMsg, setMoveMsg] = useState(null); */
   const [salaAtiva, setSalaAtiva] = useState(null);
   const [nomeSala, setNomeSala] = useState(null);
   const [andarAtivo, setAndarAtivo] = useState(1);
   const [mapaAtivo, setMapaAtivo] = useState(null);
-  const [mapWidth, setMapWidth] = useState(0);
   const textareaRef = useRef(null);
-  const mapContainerRef = useRef(null);
   const [notas, setNotas] = useState("");
   const activeFloor = floorRegistry[andarAtivo - 1];
   const STORAGE_KEY = 'mad-mage-notes';
@@ -150,23 +146,6 @@ const Mapper = (props) => {
   }, [activeFloor, andarAtivo]);
 
   useEffect(() => {
-    const element = mapContainerRef.current;
-    if (!element) return undefined;
-
-    const updateMapWidth = () => setMapWidth(element.clientWidth);
-    updateMapWidth();
-
-    if (typeof ResizeObserver === 'undefined') {
-      window.addEventListener('resize', updateMapWidth);
-      return () => window.removeEventListener('resize', updateMapWidth);
-    }
-
-    const observer = new ResizeObserver(updateMapWidth);
-    observer.observe(element);
-    return () => observer.disconnect();
-  }, []);
-
-  useEffect(() => {
     document.title = `${mapaAtivo?.name || `Floor ${andarAtivo}`} | Dungeon of the Mad Mage`;
   }, [andarAtivo, mapaAtivo]);
 
@@ -190,24 +169,10 @@ const Mapper = (props) => {
       setNotas(getNote(area.id));
     }
   };
-
-  /* const moveOnArea = (area, evt) => {
-    setMoveMsg("You moved on " + area.id + " " + area.name + "!");
-  };
-
-  const clickedOutside = (evt) => {
-    const coords = { x: evt.nativeEvent.layerX, y: evt.nativeEvent.layerY };
-    setMsg(`You clicked on the image at coords ${JSON.stringify(coords)}!`);
-  };
-
-  const moveOnImage = (evt) => {
-    const coords = { x: evt.nativeEvent.layerX, y: evt.nativeEvent.layerY };
-    setMoveMsg(`You moved on the image at coords ${JSON.stringify(coords)}!`);
-  }; */
   
   return (
     <div>
-      <div id="mapa" ref={mapContainerRef}>
+      <div id="mapa">
         <button className='elevador' id='botaoSk' onClick={() => clickedElevador(23)}>💀</button>
         <button className='elevador' id='botao1' onClick={() => clickedElevador(1)}>1º</button>
         <button className='elevador' id='botao2' onClick={() => clickedElevador(2)}>2º</button>
@@ -231,20 +196,7 @@ const Mapper = (props) => {
         <button className='elevador' id='botao20' onClick={() => clickedElevador(20)}>20º</button>
         <button className='elevador' id='botao21' onClick={() => clickedElevador(21)}>21º</button>
         <button className='elevador' id='botao22' onClick={() => clickedElevador(22)}>22º</button>
-        {mapaAtivo && mapWidth > 0 && <ImageMapper
-          src={mapaAtivo.src}
-          map={mapaAtivo}
-          /* onLoad={() => load()}
-          onImageClick={(evt) => clickedOutside(evt)}
-          onImageMouseMove={(evt) => moveOnImage(evt)}
-          onMouseMove={(area, _, evt) => moveOnArea(area, evt)} */
-          onClick={(area) => clickArea(area)}
-          stayHighlighted={true}
-          fillColor='rgba(0, 0, 255, 0.2)'
-          responsive={true}
-          parentWidth={mapWidth}
-        />
-        }
+        {mapaAtivo && <MapSvg map={mapaAtivo} onAreaClick={clickArea} />}
       </div>
       <div id="info">
         <h1>{nomeSala || mapaAtivo?.name || 'Loading floor...'}</h1>

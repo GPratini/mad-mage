@@ -429,25 +429,25 @@ export const Mapa2 = {
     },
     {
       id: "2-27",
-      name: "Provas - Atrito",
+      name: "Provas: Atrito",
       shape: "poly",
       coords: [1480,1263,1503,1262,1506,1053,1269,1057,1269,1082,1477,1085]
     },
     {
       id: "2-28",
-      name: "Provas - Gases",
+      name: "Provas: Gases",
       shape: "poly",
       coords: [1374,1420,1372,1393,1272,1393,1271,1573,1242,1574,1242,1604,1294,1599,1296,1421]
     },
     {
       id: "2-29",
-      name: "Provas - Magnetismo",
+      name: "Provas: Magnetismo",
       shape: "rect",
       coords: [1010,1577,1035,1734]
     },
     {
       id: "2-30",
-      name: "Provas - Condutividade",
+      name: "Provas: Condutividade",
       shape: "rect",
       coords: [490,1630,775,1652]
     }

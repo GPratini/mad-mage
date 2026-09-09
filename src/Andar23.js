@@ -1,6 +1,6 @@
 export const Mapa23 = {
   src: "skullport1.png",
-  name: "Skullport - Lower / Middle",
+  name: "Skullport: Lower / Middle",
   areas: [
     {
       id: "skullIsland",

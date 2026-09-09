@@ -64,7 +64,7 @@ export const Mapa4 = {
     },
     {
       id: "4-11a",
-      name: "Drow Outpost - Main Cavern",
+      name: "Drow Outpost: Main Cavern",
       shape: "poly",
       coords: [1515, 1137, 1508, 1009, 1525, 968, 1525, 935, 1558, 931, 1569, 893, 1614, 874, 1636, 898, 1636, 957, 1638, 1013, 1624, 1044, 1603, 1058, 1595, 1113, 1555, 1158]
     },
@@ -112,13 +112,13 @@ export const Mapa4 = {
     },
     {
       id: "4-16a",
-      name: "Grotto of Madness - Lost Island of Bulba-Slopp",
+      name: "Grotto of Madness: Lost Island of Bulba-Slopp",
       shape: "circle",
       coords: [1165, 1653, 59]
     },
     {
       id: "4-16b",
-      name: "Grotto of Madness - Lake of the Aboleth",
+      name: "Grotto of Madness: Lake of the Aboleth",
       shape: "circle",
       coords: [1070, 1824, 107]
     },
@@ -154,13 +154,13 @@ export const Mapa4 = {
     },
     {
       id: "4-21a",
-      name: "Archpriest's Chambers - Making a God",
+      name: "Archpriest's Chambers: Making a God",
       shape: "circle",
       coords: [613, 1300, 74]
     },
     {
       id: "4-21b",
-      name: "Archpriest's Chambers - Kuo-toa Carnage",
+      name: "Archpriest's Chambers: Kuo-toa Carnage",
       shape: "circle",
       coords: [555, 1458, 48]
     },
@@ -178,7 +178,7 @@ export const Mapa4 = {
     },
     {
       id: "4-24a",
-      name: "Troglodyte Takeover - West Sentries",
+      name: "Troglodyte Takeover: West Sentries",
       shape: "circle",
       coords: [530, 2382, 53]
     },

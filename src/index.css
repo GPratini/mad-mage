@@ -13,14 +13,14 @@ body {
 }
 
 @font-face {
-  font-family: "Nodesto";
-  src: url("../fonts/Nodesto Caps Condensed.otf") format("opentype");
+  font-family: "Scaly Sans Caps";
+  src: url("../fonts/Scaly Sans Caps.otf") format("opentype");
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Mr Eaves Small Caps";
-  src: url("../fonts/Mr Eaves Small Caps.otf") format("opentype");
+  font-family: "Mr Eaves Small";
+  src: url("../fonts/Mr Eaves Small.otf") format("opentype");
   font-display: swap;
 }
 
@@ -53,6 +53,29 @@ code {
   padding: 1vh 2px;
 }
 
+.map-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+.map-area {
+  fill: rgba(0, 0, 255, 0.04);
+  stroke: transparent;
+  stroke-width: 4;
+  cursor: pointer;
+  outline: none;
+  transition: fill 120ms ease, stroke 120ms ease;
+}
+
+.map-area:hover,
+.map-area:focus,
+.map-area-active {
+  fill: rgba(0, 0, 255, 0.2);
+  stroke: rgba(0, 0, 150, 0.65);
+}
+
 textarea {
   width: 97%;
   height: fit-content;
@@ -67,7 +90,7 @@ p , ul , ol {
 }
 
 h1 {
-  font-family: "Nodesto";
+  font-family: "Scaly Sans Caps";
 	font-weight: bold;
 }
 
