@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/mad-mage/static/css/main.83e3723f.css",
+    "main.css": "/mad-mage/static/css/main.ce929653.css",
     "main.js": "/mad-mage/static/js/main.598af391.js",
     "static/js/684.492bdb3c.chunk.js": "/mad-mage/static/js/684.492bdb3c.chunk.js",
     "static/js/914.ada8a1de.chunk.js": "/mad-mage/static/js/914.ada8a1de.chunk.js",
@@ -30,10 +30,10 @@
     "static/js/389.b118c1a4.chunk.js": "/mad-mage/static/js/389.b118c1a4.chunk.js",
     "static/js/787.51009ae9.chunk.js": "/mad-mage/static/js/787.51009ae9.chunk.js",
     "static/media/Mr Eaves Small Caps.otf": "/mad-mage/static/media/Mr Eaves Small Caps.a450887c4c7311f843ba.otf",
-    "static/media/Scaly Sans Caps Bold.otf": "/mad-mage/static/media/Scaly Sans Caps Bold.239a6751e2397a325dec.otf",
     "static/media/Bookinsanity.otf": "/mad-mage/static/media/Bookinsanity.641fa108a09b97e89eba.otf",
+    "static/media/Scaly Sans Caps.otf": "/mad-mage/static/media/Scaly Sans Caps.d8e440835123694135e2.otf",
     "index.html": "/mad-mage/index.html",
-    "main.83e3723f.css.map": "/mad-mage/static/css/main.83e3723f.css.map",
+    "main.ce929653.css.map": "/mad-mage/static/css/main.ce929653.css.map",
     "main.598af391.js.map": "/mad-mage/static/js/main.598af391.js.map",
     "684.492bdb3c.chunk.js.map": "/mad-mage/static/js/684.492bdb3c.chunk.js.map",
     "914.ada8a1de.chunk.js.map": "/mad-mage/static/js/914.ada8a1de.chunk.js.map",
@@ -64,7 +64,7 @@
     "787.51009ae9.chunk.js.map": "/mad-mage/static/js/787.51009ae9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.83e3723f.css",
+    "static/css/main.ce929653.css",
     "static/js/main.598af391.js"
   ]
 }
